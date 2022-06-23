@@ -412,14 +412,31 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ayi-Vo-A3m">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="takeOrderCell" id="Ayi-Vo-A3m" customClass="TakeOrderCollectionViewCell" customModule="Olearys" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="16.666666666666668" width="102" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yAw-Dy-viM">
                                             <rect key="frame" x="0.0" y="0.0" width="102" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGe-4r-QP2">
+                                                    <rect key="frame" x="8" y="37" width="86" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QGe-4r-QP2" firstAttribute="centerY" secondItem="yAw-Dy-viM" secondAttribute="centerY" id="Irj-QQ-aAJ"/>
+                                                <constraint firstItem="QGe-4r-QP2" firstAttribute="height" secondItem="yAw-Dy-viM" secondAttribute="height" multiplier="0.221053" id="nRH-Vp-0rm"/>
+                                                <constraint firstItem="QGe-4r-QP2" firstAttribute="width" secondItem="yAw-Dy-viM" secondAttribute="width" multiplier="0.843137" id="pCe-YM-4fP"/>
+                                                <constraint firstItem="QGe-4r-QP2" firstAttribute="centerX" secondItem="yAw-Dy-viM" secondAttribute="centerX" id="vrH-6V-NAI"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="102" height="95"/>
+                                        <connections>
+                                            <outlet property="typeLabel" destination="QGe-4r-QP2" id="wFR-IL-EGH"/>
+                                        </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AbT-jG-1HH">
                                         <rect key="frame" x="112" y="0.0" width="128" height="128"/>
@@ -459,10 +476,13 @@
                     <tabBarItem key="tabBarItem" title="Item" id="F40-su-cG2">
                         <color key="badgeColor" red="0.95884652690000005" green="0.76719281459999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="menuColleCtionView" destination="igg-Yo-hE5" id="M2k-0T-Qy3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4B-aB-OQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1556.9230769230769" y="-789.09952606635068"/>
+            <point key="canvasLocation" x="1201.5384615384614" y="-729.38388625592415"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g6C-v5-xkP">

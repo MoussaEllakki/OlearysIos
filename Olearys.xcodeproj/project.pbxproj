@@ -26,6 +26,7 @@
 		B5BAA45E282D5ABF00541501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BAA45D282D5ABF00541501 /* Assets.xcassets */; };
 		B5BAA461282D5ABF00541501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BAA45F282D5ABF00541501 /* LaunchScreen.storyboard */; };
 		B5BAA469282D5B9000541501 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BAA468282D5B9000541501 /* GoogleService-Info.plist */; };
+		B5BE176F2864E84600972627 /* TakeOrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE176E2864E84600972627 /* TakeOrderCollectionViewCell.swift */; };
 		B5D29BB4285334DF00357F94 /* TabelsStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB3285334DF00357F94 /* TabelsStatusViewController.swift */; };
 		B5D29BB6285337C100357F94 /* ForTakingPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */; };
 		B5D29BB82853395900357F94 /* TakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB72853395900357F94 /* TakeOrderViewController.swift */; };
@@ -57,6 +58,7 @@
 		B5BAA460282D5ABF00541501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5BAA462282D5ABF00541501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BAA468282D5B9000541501 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5BE176E2864E84600972627 /* TakeOrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOrderCollectionViewCell.swift; sourceTree = "<group>"; };
 		B5D29BB3285334DF00357F94 /* TabelsStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelsStatusViewController.swift; sourceTree = "<group>"; };
 		B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForTakingPaymentViewController.swift; sourceTree = "<group>"; };
 		B5D29BB72853395900357F94 /* TakeOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOrderViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		B5D29BB02853303800357F94 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B5BE176E2864E84600972627 /* TakeOrderCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				B5D29BBA2853399700357F94 /* KitchenViewController.swift in Sources */,
 				B5BAA459282D5ABD00541501 /* LogInViewController.swift in Sources */,
 				B5B8E150282DAA7A00D18C10 /* Guest.swift in Sources */,
+				B5BE176F2864E84600972627 /* TakeOrderCollectionViewCell.swift in Sources */,
 				B5B8E25E2831AF4A00D18C10 /* TablesViewController.swift in Sources */,
 				B512B7CD2863B472005891B1 /* Type.swift in Sources */,
 				B5B8E15C282DBBA200D18C10 /* Restaurant.swift in Sources */,

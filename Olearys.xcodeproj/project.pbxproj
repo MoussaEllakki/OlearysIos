@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B512B7CB2863B43E005891B1 /* Menue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B512B7CA2863B43E005891B1 /* Menue.swift */; };
 		B512B7CD2863B472005891B1 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = B512B7CC2863B472005891B1 /* Type.swift */; };
 		B512B7CF2863B55E005891B1 /* ControllEmptyTextAndRestaurantID .swift in Sources */ = {isa = PBXBuildFile; fileRef = B512B7CE2863B55E005891B1 /* ControllEmptyTextAndRestaurantID .swift */; };
 		B58F694B284E4A4B005BB074 /* MessageForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F694A284E4A4B005BB074 /* MessageForUser.swift */; };
@@ -37,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		047EF136C629E31A195F2858 /* Pods-Olearys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olearys.debug.xcconfig"; path = "Target Support Files/Pods-Olearys/Pods-Olearys.debug.xcconfig"; sourceTree = "<group>"; };
-		B512B7CA2863B43E005891B1 /* Menue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menue.swift; sourceTree = "<group>"; };
 		B512B7CC2863B472005891B1 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		B512B7CE2863B55E005891B1 /* ControllEmptyTextAndRestaurantID .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllEmptyTextAndRestaurantID .swift"; sourceTree = "<group>"; };
 		B58F694A284E4A4B005BB074 /* MessageForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageForUser.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 		B512B7C92863B427005891B1 /* TheMenu */ = {
 			isa = PBXGroup;
 			children = (
-				B512B7CA2863B43E005891B1 /* Menue.swift */,
 				B512B7CC2863B472005891B1 /* Type.swift */,
 			);
 			path = TheMenu;
@@ -317,7 +314,6 @@
 				B5BAA455282D5ABD00541501 /* AppDelegate.swift in Sources */,
 				B5BAA457282D5ABD00541501 /* SceneDelegate.swift in Sources */,
 				B5D29BB4285334DF00357F94 /* TabelsStatusViewController.swift in Sources */,
-				B512B7CB2863B43E005891B1 /* Menue.swift in Sources */,
 				B5D29BB82853395900357F94 /* TakeOrderViewController.swift in Sources */,
 				B512B7CF2863B55E005891B1 /* ControllEmptyTextAndRestaurantID .swift in Sources */,
 				B5D29BBC285339C100357F94 /* PaymentViewController.swift in Sources */,

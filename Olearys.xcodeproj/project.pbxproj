@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B512B7CD2863B472005891B1 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = B512B7CC2863B472005891B1 /* Type.swift */; };
 		B512B7CF2863B55E005891B1 /* ControllEmptyTextAndRestaurantID .swift in Sources */ = {isa = PBXBuildFile; fileRef = B512B7CE2863B55E005891B1 /* ControllEmptyTextAndRestaurantID .swift */; };
+		B53D0741286577BE00A14040 /* TablesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */; };
 		B58F694B284E4A4B005BB074 /* MessageForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F694A284E4A4B005BB074 /* MessageForUser.swift */; };
 		B5B8E146282DA90F00D18C10 /* BuildRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8E145282DA90F00D18C10 /* BuildRestaurant.swift */; };
 		B5B8E148282DA98100D18C10 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8E147282DA98100D18C10 /* Table.swift */; };
@@ -39,6 +40,7 @@
 		047EF136C629E31A195F2858 /* Pods-Olearys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olearys.debug.xcconfig"; path = "Target Support Files/Pods-Olearys/Pods-Olearys.debug.xcconfig"; sourceTree = "<group>"; };
 		B512B7CC2863B472005891B1 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		B512B7CE2863B55E005891B1 /* ControllEmptyTextAndRestaurantID .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllEmptyTextAndRestaurantID .swift"; sourceTree = "<group>"; };
+		B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesCollectionViewCell.swift; sourceTree = "<group>"; };
 		B58F694A284E4A4B005BB074 /* MessageForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageForUser.swift; sourceTree = "<group>"; };
 		B5B8E145282DA90F00D18C10 /* BuildRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildRestaurant.swift; sourceTree = "<group>"; };
 		B5B8E147282DA98100D18C10 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B5BE176E2864E84600972627 /* TakeOrderCollectionViewCell.swift */,
+				B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B8E15A282DB1D500D18C10 /* Payment.swift in Sources */,
+				B53D0741286577BE00A14040 /* TablesCollectionViewCell.swift in Sources */,
 				B5D29BBA2853399700357F94 /* KitchenViewController.swift in Sources */,
 				B5BAA459282D5ABD00541501 /* LogInViewController.swift in Sources */,
 				B5B8E150282DAA7A00D18C10 /* Guest.swift in Sources */,

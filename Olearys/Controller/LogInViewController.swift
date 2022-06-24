@@ -9,8 +9,8 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var restaurantIDTextField: UITextField!
     var ref :  DatabaseReference!
     var restaurant = BuildRestaurant()
-    var sendMsg = MessageForUser()
-    
+    var messageForUser = MessageForUser()
+    var olearysEntreId = "0000"
     var controll = ControllEmptyTextAndRestaurantID()
     
     override func viewDidLoad() {
@@ -30,13 +30,19 @@ class LogInViewController: UIViewController {
     @IBAction func logIn_button(_ sender: Any) {
         
         if controll.ifTextEmpty(textField: restaurantIDTextField) {
-            sendMsg.BecauseTextFieldIsEmpty(controller: self, msg: sendMsg.emptyTextField)
+            messageForUser.sendMessage(controller: self, msg: messageForUser.emptyTextFieldText)
             print("empty")
             
         }else{
           
-            restaurantIDTextField.text = ""
-            print("no empty")
+            if ("0000" == olearysEntreId){
+                restaurantIDTextField.text = ""
+       
+              }else{
+                
+             messageForUser.sendMessage(controller: self, msg: messageForUser.wrongIdText)
+            }
+         
             
         }
     

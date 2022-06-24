@@ -16,38 +16,75 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         
         for i in 0...10{
             
-        
-        tablesForDelete.append(TableForDelete(number: "1", img: UIImage(named: "red")!))
-        tablesForDelete.append(TableForDelete(number: "2", img: UIImage(named: "red")!))
-        tablesForDelete.append(TableForDelete(number: "3", img: UIImage(named: "red")!))
+            
+            if (i % 2 == 0){
+                tablesForDelete.append(TableForDelete(number: "1", img: UIImage(named: "green")!))
+                tablesForDelete.append(TableForDelete(number: "2", img: UIImage(named: "green")!))
+                tablesForDelete.append(TableForDelete(number: "3", img: UIImage(named: "green")!))
+            } else{
+                
+                tablesForDelete.append(TableForDelete(number: "1", img: UIImage(named: "red")!))
+                tablesForDelete.append(TableForDelete(number: "2", img: UIImage(named: "red")!))
+                tablesForDelete.append(TableForDelete(number: "3", img: UIImage(named: "red")!))
+                
+            }
+      
         }
         
     }
     
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    
-        tablesForDelete.count
+    tablesForDelete.count
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "tablesCell", for: indexPath) as! TablesCollectionViewCell
         
         var thetable = tablesForDelete[indexPath.row]
-        
         cell.setUpTalesContent(tableNumber: thetable.number , tableImage: thetable.img)
-        
         return cell
-        
-        
-        
-    }
+     }
     
     
    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       
+        let segueToTakeOrderView = performSegue(withIdentifier: "toTakeOrderView", sender: "aaa")
+        
+    }
+    
+  
+    
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

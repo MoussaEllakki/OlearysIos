@@ -5,22 +5,18 @@ import Firebase
 class BuildRestaurant {
     
     var ref :  DatabaseReference!
-   
     
-   init(){
-        
+    init(){
         ref = Database.database().reference()
     }
     
     
-    
-    
-    func buildTables (tableQuantity : Int , RestaurantID : String) {
+
+    func buildTables (tableQuantity : Int) {
       
-        for i in 1...tableQuantity{
-            
+        let restaurant =   ref.child(RestaurantID().id)
         
-            let restaurant =   ref.child("Restaurant").child(RestaurantID)
+        for i in 1...tableQuantity{
             
             for i in 0..<tableQuantity{
                 

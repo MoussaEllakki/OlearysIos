@@ -7,35 +7,24 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
 
     @IBOutlet weak var tablesCollectionView: UICollectionView!
     
-    var tablesForDelete : [TableForDelete] = []
+    let getDataFromeFireBase = GetDataFromeFireBase()
+    var tablesForDelete :[String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tablesCollectionView.dataSource = self
         tablesCollectionView.delegate = self
-        
-        for i in 0...10{
-            
-            
-            if (i % 2 == 0){
-                tablesForDelete.append(TableForDelete(number: "1", img: UIImage(named: "green")!))
-                tablesForDelete.append(TableForDelete(number: "2", img: UIImage(named: "green")!))
-                tablesForDelete.append(TableForDelete(number: "3", img: UIImage(named: "green")!))
-            } else{
-                
-                tablesForDelete.append(TableForDelete(number: "1", img: UIImage(named: "red")!))
-                tablesForDelete.append(TableForDelete(number: "2", img: UIImage(named: "red")!))
-                tablesForDelete.append(TableForDelete(number: "3", img: UIImage(named: "red")!))
-                
-            }
-      
+    
+         getDataFromeFireBase.getTables { [self] in
+             tablesForDelete = getDataFromeFireBase.tables
+             tablesCollectionView.reloadData()
         }
-        
-    }
+  
+     }
     
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    tablesForDelete.count
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+     return tablesForDelete.count
     }
     
     
@@ -43,8 +32,8 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "tablesCell", for: indexPath) as! TablesCollectionViewCell
         
-        var thetable = tablesForDelete[indexPath.row]
-        cell.setUpTalesContent(tableNumber: thetable.number , tableImage: thetable.img)
+       let imgForDelete = UIImage(named: "green")
+        cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
         return cell
      }
     
@@ -83,21 +72,3 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
 
 
 
-
-
-
-
-
-class TableForDelete {
-    
-    var number : String
-    var img : UIImage
-    
-    init (number : String , img : UIImage){
-        
-        self.number = number
-        self.img = img
-        
-    }
-    
-}

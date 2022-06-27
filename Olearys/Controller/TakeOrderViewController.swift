@@ -7,27 +7,33 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate , UIC
 
     @IBOutlet weak var menuColleCtionView: UICollectionView!
     
-    var forDelete = [1,2,3,4,5,6,7,8,9,10,11,12]
+    let getDataFromeFireBase = GetDataFromeFireBase()
+    var tablesForDelete :[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         menuColleCtionView.delegate = self
         menuColleCtionView.dataSource = self
+        
+            getDataFromeFireBase.getTables { [self] in
+                 tablesForDelete = getDataFromeFireBase.tables
+              menuColleCtionView.reloadData()
+            }
     
     }
     
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return forDelete.count
+        return tablesForDelete.count
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "takeOrderCell", for: indexPath) as! TakeOrderCollectionViewCell
-        
-        cell.typeLabel.text = "Food mat\(forDelete[indexPath.row])"
+         cell.typeLabel.text = "num \(tablesForDelete[indexPath.row])"
         return cell
         
     }

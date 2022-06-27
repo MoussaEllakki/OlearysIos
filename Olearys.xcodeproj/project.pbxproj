@@ -12,6 +12,7 @@
 		B5246200286959F800422C1B /* GetDataFromeFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52461FF286959F800422C1B /* GetDataFromeFireBase.swift */; };
 		B524620228695A5E00422C1B /* UpdateDataInFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524620128695A5D00422C1B /* UpdateDataInFireBase.swift */; };
 		B533592D2869772700391544 /* Oneinstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533592C2869772700391544 /* Oneinstance.swift */; };
+		B533592F28697DE100391544 /* AttGoraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533592E28697DE100391544 /* AttGoraCollectionViewCell.swift */; };
 		B53D0741286577BE00A14040 /* TablesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */; };
 		B58F694B284E4A4B005BB074 /* MessageForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F694A284E4A4B005BB074 /* MessageForUser.swift */; };
 		B5B8E146282DA90F00D18C10 /* BuildRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8E145282DA90F00D18C10 /* BuildRestaurant.swift */; };
@@ -31,7 +32,7 @@
 		B5BAA461282D5ABF00541501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BAA45F282D5ABF00541501 /* LaunchScreen.storyboard */; };
 		B5BAA469282D5B9000541501 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BAA468282D5B9000541501 /* GoogleService-Info.plist */; };
 		B5BE176F2864E84600972627 /* TakeOrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE176E2864E84600972627 /* TakeOrderCollectionViewCell.swift */; };
-		B5D29BB4285334DF00357F94 /* TabelsStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB3285334DF00357F94 /* TabelsStatusViewController.swift */; };
+		B5D29BB4285334DF00357F94 /* AttGoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB3285334DF00357F94 /* AttGoraViewController.swift */; };
 		B5D29BB6285337C100357F94 /* ForTakingPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */; };
 		B5D29BB82853395900357F94 /* TakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB72853395900357F94 /* TakeOrderViewController.swift */; };
 		B5D29BBA2853399700357F94 /* KitchenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB92853399700357F94 /* KitchenViewController.swift */; };
@@ -46,6 +47,7 @@
 		B52461FF286959F800422C1B /* GetDataFromeFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataFromeFireBase.swift; sourceTree = "<group>"; };
 		B524620128695A5D00422C1B /* UpdateDataInFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDataInFireBase.swift; sourceTree = "<group>"; };
 		B533592C2869772700391544 /* Oneinstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oneinstance.swift; sourceTree = "<group>"; };
+		B533592E28697DE100391544 /* AttGoraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttGoraCollectionViewCell.swift; sourceTree = "<group>"; };
 		B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesCollectionViewCell.swift; sourceTree = "<group>"; };
 		B58F694A284E4A4B005BB074 /* MessageForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageForUser.swift; sourceTree = "<group>"; };
 		B5B8E145282DA90F00D18C10 /* BuildRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildRestaurant.swift; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 		B5BAA462282D5ABF00541501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BAA468282D5B9000541501 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5BE176E2864E84600972627 /* TakeOrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOrderCollectionViewCell.swift; sourceTree = "<group>"; };
-		B5D29BB3285334DF00357F94 /* TabelsStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelsStatusViewController.swift; sourceTree = "<group>"; };
+		B5D29BB3285334DF00357F94 /* AttGoraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttGoraViewController.swift; sourceTree = "<group>"; };
 		B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForTakingPaymentViewController.swift; sourceTree = "<group>"; };
 		B5D29BB72853395900357F94 /* TakeOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOrderViewController.swift; sourceTree = "<group>"; };
 		B5D29BB92853399700357F94 /* KitchenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenViewController.swift; sourceTree = "<group>"; };
@@ -167,7 +169,7 @@
 				B5BAA458282D5ABD00541501 /* LogInViewController.swift */,
 				B5B8E25B2831AB4F00D18C10 /* MainViewController.swift */,
 				B5B8E25D2831AF4A00D18C10 /* TablesViewController.swift */,
-				B5D29BB3285334DF00357F94 /* TabelsStatusViewController.swift */,
+				B5D29BB3285334DF00357F94 /* AttGoraViewController.swift */,
 				B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */,
 				B5D29BB72853395900357F94 /* TakeOrderViewController.swift */,
 				B5D29BB92853399700357F94 /* KitchenViewController.swift */,
@@ -181,6 +183,7 @@
 			children = (
 				B5BE176E2864E84600972627 /* TakeOrderCollectionViewCell.swift */,
 				B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */,
+				B533592E28697DE100391544 /* AttGoraCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				B5BE176F2864E84600972627 /* TakeOrderCollectionViewCell.swift in Sources */,
 				B5B8E25E2831AF4A00D18C10 /* TablesViewController.swift in Sources */,
 				B512B7CD2863B472005891B1 /* Type.swift in Sources */,
+				B533592F28697DE100391544 /* AttGoraCollectionViewCell.swift in Sources */,
 				B5B8E15C282DBBA200D18C10 /* Restaurant.swift in Sources */,
 				B524620228695A5E00422C1B /* UpdateDataInFireBase.swift in Sources */,
 				B5D29BB6285337C100357F94 /* ForTakingPaymentViewController.swift in Sources */,
@@ -340,7 +344,7 @@
 				B5B8E25C2831AB4F00D18C10 /* MainViewController.swift in Sources */,
 				B5BAA455282D5ABD00541501 /* AppDelegate.swift in Sources */,
 				B5BAA457282D5ABD00541501 /* SceneDelegate.swift in Sources */,
-				B5D29BB4285334DF00357F94 /* TabelsStatusViewController.swift in Sources */,
+				B5D29BB4285334DF00357F94 /* AttGoraViewController.swift in Sources */,
 				B5D29BB82853395900357F94 /* TakeOrderViewController.swift in Sources */,
 				B5D29BBC285339C100357F94 /* PaymentViewController.swift in Sources */,
 				B52461FE286959C900422C1B /* SetDataInFireBase.swift in Sources */,

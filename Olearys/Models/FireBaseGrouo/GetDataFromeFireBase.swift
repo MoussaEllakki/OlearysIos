@@ -28,7 +28,7 @@ class GetDataFromeFireBase {
         print("two")
         self.tables.removeAll()
         
-        ref.child(RestaurantID().id).child("Tables").getData(completion:  { [self] error, snapshot in
+        ref.child(Oneinstance().olearysEntre).child(Oneinstance().tables).getData(completion:  { [self] error, snapshot in
             guard error == nil else {
                 print(error!.localizedDescription)
                 print("fellllll")
@@ -104,7 +104,7 @@ class GetDataFromeFireBase {
     }*/
     
     
-    
+    /*
     func updateData (index : String , name : String , age : Int){
         
         let person : [String : Any] = ["name" : name , "age" : age]
@@ -126,7 +126,7 @@ class GetDataFromeFireBase {
         ref.child("People").child(index).setValue(person)
     }
     
-    
+    */
     
     
     

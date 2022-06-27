@@ -9,11 +9,13 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var restaurantIDTextField: UITextField!
     var buildRestaurant = BuildRestaurant()
     var messageForUser = MessageForUser()
-   
+    let restaurantId = "x"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        buildRestaurant.buildTables(tableQuantity: 18)
        
     }
     
@@ -22,7 +24,7 @@ class LogInViewController: UIViewController {
             messageForUser.sendMessage(controller: self, msg: messageForUser.emptyTextFieldText)
         }
         
-          if (restaurantIDTextField.text != RestaurantID().id){
+          if (restaurantIDTextField.text != restaurantId){
             messageForUser.sendMessage(controller: self, msg: messageForUser.wrongIdText)
         }
     }

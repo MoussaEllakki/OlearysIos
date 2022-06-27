@@ -14,7 +14,7 @@ class BuildRestaurant {
 
     func buildTables (tableQuantity : Int) {
       
-        let restaurant =   ref.child(RestaurantID().id)
+        let restaurant =   ref.child(Oneinstance().olearysEntre)
         
         for i in 1...tableQuantity{
             
@@ -23,7 +23,7 @@ class BuildRestaurant {
                let  tableNumberPlusOne = String(i + 1)
                let tableNumber = String(i)
              
-                restaurant.child("Tables").child(tableNumber).setValue(tableNumberPlusOne)
+                restaurant.child(Oneinstance().tables).child(tableNumber).setValue(tableNumberPlusOne)
                 
               
                 

@@ -14,6 +14,8 @@
 		B533592D2869772700391544 /* Oneinstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533592C2869772700391544 /* Oneinstance.swift */; };
 		B533592F28697DE100391544 /* AttGoraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533592E28697DE100391544 /* AttGoraCollectionViewCell.swift */; };
 		B53D0741286577BE00A14040 /* TablesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */; };
+		B57C9883286A200F00993F24 /* OrdersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C9882286A200F00993F24 /* OrdersCollectionViewCell.swift */; };
+		B57C9885286A204A00993F24 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C9884286A204A00993F24 /* FoodTableViewCell.swift */; };
 		B58F694B284E4A4B005BB074 /* MessageForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F694A284E4A4B005BB074 /* MessageForUser.swift */; };
 		B5B8E146282DA90F00D18C10 /* BuildRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8E145282DA90F00D18C10 /* BuildRestaurant.swift */; };
 		B5B8E148282DA98100D18C10 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8E147282DA98100D18C10 /* Table.swift */; };
@@ -49,6 +51,8 @@
 		B533592C2869772700391544 /* Oneinstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oneinstance.swift; sourceTree = "<group>"; };
 		B533592E28697DE100391544 /* AttGoraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttGoraCollectionViewCell.swift; sourceTree = "<group>"; };
 		B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesCollectionViewCell.swift; sourceTree = "<group>"; };
+		B57C9882286A200F00993F24 /* OrdersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCollectionViewCell.swift; sourceTree = "<group>"; };
+		B57C9884286A204A00993F24 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		B58F694A284E4A4B005BB074 /* MessageForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageForUser.swift; sourceTree = "<group>"; };
 		B5B8E145282DA90F00D18C10 /* BuildRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildRestaurant.swift; sourceTree = "<group>"; };
 		B5B8E147282DA98100D18C10 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				B5BE176E2864E84600972627 /* TakeOrderCollectionViewCell.swift */,
 				B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */,
 				B533592E28697DE100391544 /* AttGoraCollectionViewCell.swift */,
+				B57C9882286A200F00993F24 /* OrdersCollectionViewCell.swift */,
+				B57C9884286A204A00993F24 /* FoodTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 				B53D0741286577BE00A14040 /* TablesCollectionViewCell.swift in Sources */,
 				B5D29BBA2853399700357F94 /* KitchenViewController.swift in Sources */,
 				B5BAA459282D5ABD00541501 /* LogInViewController.swift in Sources */,
+				B57C9883286A200F00993F24 /* OrdersCollectionViewCell.swift in Sources */,
 				B5B8E150282DAA7A00D18C10 /* Guest.swift in Sources */,
 				B5BE176F2864E84600972627 /* TakeOrderCollectionViewCell.swift in Sources */,
 				B5B8E25E2831AF4A00D18C10 /* TablesViewController.swift in Sources */,
@@ -343,6 +350,7 @@
 				B5B8E148282DA98100D18C10 /* Table.swift in Sources */,
 				B5B8E25C2831AB4F00D18C10 /* MainViewController.swift in Sources */,
 				B5BAA455282D5ABD00541501 /* AppDelegate.swift in Sources */,
+				B57C9885286A204A00993F24 /* FoodTableViewCell.swift in Sources */,
 				B5BAA457282D5ABD00541501 /* SceneDelegate.swift in Sources */,
 				B5D29BB4285334DF00357F94 /* AttGoraViewController.swift in Sources */,
 				B5D29BB82853395900357F94 /* TakeOrderViewController.swift in Sources */,

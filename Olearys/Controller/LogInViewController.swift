@@ -9,7 +9,7 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var restaurantIDTextField: UITextField!
     var buildRestaurant = BuildRestaurant()
     var messageForUser = MessageForUser()
-    let restaurantId = "x"
+    let restaurantId = "0"
     
     
     override func viewDidLoad() {

@@ -20,7 +20,6 @@
 		B54BB926286F3B4A006F0860 /* Kid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB925286F3B4A006F0860 /* Kid.swift */; };
 		B54BB928286F3B5D006F0860 /* GameDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB927286F3B5D006F0860 /* GameDay.swift */; };
 		B54BB92A286F3BD0006F0860 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB929286F3BD0006F0860 /* Menu.swift */; };
-		B54BB92C286F4734006F0860 /* Sauce.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB92B286F4734006F0860 /* Sauce.swift */; };
 		B57C9883286A200F00993F24 /* OrdersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C9882286A200F00993F24 /* OrdersCollectionViewCell.swift */; };
 		B57C9885286A204A00993F24 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C9884286A204A00993F24 /* FoodTableViewCell.swift */; };
 		B58F694B284E4A4B005BB074 /* MessageForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F694A284E4A4B005BB074 /* MessageForUser.swift */; };
@@ -64,7 +63,6 @@
 		B54BB925286F3B4A006F0860 /* Kid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kid.swift; sourceTree = "<group>"; };
 		B54BB927286F3B5D006F0860 /* GameDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDay.swift; sourceTree = "<group>"; };
 		B54BB929286F3BD0006F0860 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		B54BB92B286F4734006F0860 /* Sauce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sauce.swift; sourceTree = "<group>"; };
 		B57C9882286A200F00993F24 /* OrdersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCollectionViewCell.swift; sourceTree = "<group>"; };
 		B57C9884286A204A00993F24 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		B58F694A284E4A4B005BB074 /* MessageForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageForUser.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				B54BB925286F3B4A006F0860 /* Kid.swift */,
 				B54BB927286F3B5D006F0860 /* GameDay.swift */,
 				B54BB929286F3BD0006F0860 /* Menu.swift */,
-				B54BB92B286F4734006F0860 /* Sauce.swift */,
 			);
 			path = TheMenu;
 			sourceTree = "<group>";
@@ -365,7 +362,6 @@
 				B5BE176F2864E84600972627 /* TakeOrderCollectionViewCell.swift in Sources */,
 				B5B8E25E2831AF4A00D18C10 /* TablesViewController.swift in Sources */,
 				B512B7CD2863B472005891B1 /* Type.swift in Sources */,
-				B54BB92C286F4734006F0860 /* Sauce.swift in Sources */,
 				B54BB922286F3B15006F0860 /* Dessert.swift in Sources */,
 				B54BB924286F3B30006F0860 /* Drink.swift in Sources */,
 				B533592F28697DE100391544 /* AttGoraCollectionViewCell.swift in Sources */,

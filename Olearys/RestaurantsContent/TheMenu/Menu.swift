@@ -1,13 +1,28 @@
-//
-//  Menu.swift
-//  Olearys
-//
-//  Created by Moussa El Lakki on 2022-07-01.
-//
+
 
 import Foundation
 
 class Menu {
+    
+   
+    
+    //------------------------------------------------------------------------------------------
+                                      // Food Menu
+    //------------------------------------------------------------------------------------------
+    
+    var snacknShare = [Food]()
+    var burgers = [Food]()
+    var mains = [Food]()
+    var sauces = [Food]()
+    
+    var desserts = [Dessert]()
+  
+    
+    var food = [[Food]]()
+    var allDesserts = [[Dessert]]()
+    
+    
+    
     
     
     // SNACK ́N SHARE
@@ -29,7 +44,7 @@ class Menu {
     let grilledChickenQuesadillas = Food(name: "GRILLED CHICKEN QUESADILLAS", price: 135.0)
     let oumphQuesadillasVagen = Food(name: "OUMPH QUESADILLAS (VEGAN)", price: 269)
     
-    var snacknShare = [Food]()
+  
     
     func filSnacknShare (){
         self.snacknShare = [hotbuffalowings5Pcs,hotbuffalowings10Pcs,hotbuffalowings15Pcs,
@@ -56,7 +71,7 @@ class Menu {
     let mozzarellaSticks2p = Food(name: "MOZZARELLA STICKS 2P", price: 15.0)
     let bacon = Food(name: "BACON", price: 10.0)
     
-    var burgers = [Food]()
+   
     
     func filBurgers (){
         self.burgers = [chilliCheeseBurger,baconBbqBurger,truffleOozingBurger,giantDoubleCheeseBurger,
@@ -67,27 +82,87 @@ class Menu {
     //------------------------------------------------------------------------------------------
     
     // DIP SAUCES
-    let aioli = Sauce(name: "AIOLI", price: 10.0)
-    let parmesanAndgarlic = Sauce(name: "PARMESAN & GARLIC", price: 10.0)
-    let hotCheedar = Sauce(name: "HOT CHEEDAR", price: 10.0)
-    let blueCheese = Sauce(name: "Blue CHEESE", price: 10.0)
-    let bearnaise = Sauce(name: "Béarnaise", price: 10.0)
-    let truffleFlavouredMayo = Sauce(name: "TRUFFLE FLAVOURED MAYO", price:10.0)
-    let chilleMayo = Sauce(name: "chilli MAYO", price: 10.0)
+    let aioli = Food(name: "AIOLI", price: 10.0)
+    let parmesanAndgarlic = Food(name: "PARMESAN & GARLIC", price: 10.0)
+    let hotCheedar = Food(name: "HOT CHEEDAR", price: 10.0)
+    let blueCheese = Food(name: "Blue CHEESE", price: 10.0)
+    let bearnaise = Food(name: "Béarnaise", price: 10.0)
+    let truffleFlavouredMayo = Food(name: "TRUFFLE FLAVOURED MAYO", price:10.0)
+    let chilleMayo = Food(name: "chilli MAYO", price: 10.0)
     
-    var sauces = [Sauce]()
+
     
     func filSauces (){
-        
-    self.sauces = [aioli,parmesanAndgarlic,hotCheedar,blueCheese,bearnaise,truffleFlavouredMayo,chilleMayo]
+        self.sauces = [aioli,parmesanAndgarlic,hotCheedar,blueCheese,bearnaise,truffleFlavouredMayo,chilleMayo]
         
     }
     
     //------------------------------------------------------------------------------------------
     
     //MAINS
+    let ryggBiff = Food(name: "RYGGBIFF", price: 299.0)
+    let oxFile = Food(name: "OXFILÉ", price: 299.0)
+    let bourbonBqqRibs = Food(name: "BOURBON BBQ RIBS", price: 209.0)
+    let fishNChips = Food(name: "FISH N’CHIPS", price: 169.0)
+    let creamypastaRäkor = Food(name: "CREAMY PASTA RÄKOR", price: 199.0)
+    let creamypastaOxFile = Food(name: "CREAMY PASTA OXFILE", price: 209.0)
+    let creamypastaVegetarisk = Food(name: "CREAMY PASTA VEGETARISK ", price: 179.0)
+    let oLearysMixedGrill = Food(name: "O’Learys Mixed Grill ", price: 305.0)
     
+   
+    
+    func filMain (){
+        self.mains = [ryggBiff,oxFile,bourbonBqqRibs,fishNChips,creamypastaRäkor,creamypastaOxFile,
+                 creamypastaVegetarisk,oLearysMixedGrill]
+        
+    }
+    
+    //------------------------------------------------------------------------------------------
+    
+   
+    func fillFoodMenu (){
+        
+        filSnacknShare()
+        filBurgers()
+        filSauces()
+        filMain()
+        self.food = [snacknShare,burgers,sauces,mains]
+    }
+    
+    //------------------------------------------------------------------------------------------
+                                      // Dessert Menu
+    //------------------------------------------------------------------------------------------
+    
+    
+    // Desserts
+     let chooclateBrowine =  Dessert(name: "CHOCOLATE BROWNIE", price: 59.0)
+     let sweetLemonTiramisu = Dessert(name: " SWEET LEMON TIRAMISU", price:39.0)
+     let deepFiedBroWine  = Dessert(name: "DEEP FRIED BROWNIE", price:29.0)
+     let iceCreamSundae   = Dessert(name: "ICE CREAM SUNDAE", price:49.0)
+     let cheeseCake   = Dessert(name: "CHEESE CAKE", price:59.0)
+    
+     
+    func fillDeserts (){
+        self.desserts = [chooclateBrowine,sweetLemonTiramisu,deepFiedBroWine,
+        iceCreamSundae,cheeseCake]
+        
+    }
+
+    
+     //------------------------------------------------------------------------------------------
+     //COFFEE DRINKS
+    
+    let espressomartini = Dessert(name: "ESPRESSO MARTINI", price: 119.0)
+    let tullamore = Dessert(name: "ULLAMORE IRISH COFFEE", price: 119.0)
+    let gallianoMartini = Dessert(name: "GALLIANO MARTINI", price: 119.0)
+    let jamaicanCoffe = Dessert(name: "JAMAICAN COFFEE", price: 119.0)
+    
+  
+    
+ 
     
     
     
 }
+
+

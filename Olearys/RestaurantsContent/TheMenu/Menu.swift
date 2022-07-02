@@ -5,27 +5,29 @@ import Foundation
 class Menu {
     
    
-    
-    //------------------------------------------------------------------------------------------
-                                      // Food Menu
-    //------------------------------------------------------------------------------------------
-    
+    //Food
     var snacknShare = [Food]()
     var burgers = [Food]()
     var mains = [Food]()
     var sauces = [Food]()
-    
-    var desserts = [Dessert]()
-  
-    
     var food = [[Food]]()
+    
+    
+    //Desserts
+    var desserts = [Dessert]()
+    var coffeDrinks = [Dessert]()
+    var avec = [Dessert]()
     var allDesserts = [[Dessert]]()
     
+    //Coktails
+    var coktails = [Drink]()
     
     
-    
-    
-    // SNACK ́N SHARE
+    //-----------------------------------------------------------------------------------
+                                      // 1 Food Menu
+    //-----------------------------------------------------------------------------------
+  
+    // 1 SNACK ́N SHARE
     let hotbuffalowings5Pcs = Food(name:  "Hot BUFFALO WINGS 5P", price: 99.0)
     let hotbuffalowings10Pcs = Food(name: "Hot Buffalo Wings 10P", price: 159.0)
     let hotbuffalowings15Pcs = Food(name: "Hot Buffalo Wings 15P", price: 199.0)
@@ -56,7 +58,7 @@ class Menu {
     //------------------------------------------------------------------------------------------
      
     
-    //BURGERS
+    // 2 BURGERS
     let chilliCheeseBurger = Food(name: "CHILLI CHEESE BURGER", price: 185.0)
     let baconBbqBurger = Food(name: "BACON BBQ BURGER", price: 185.0)
     let truffleOozingBurger = Food(name: "TRUFFLE OOZING BURGER", price: 185.0)
@@ -81,7 +83,7 @@ class Menu {
     
     //------------------------------------------------------------------------------------------
     
-    // DIP SAUCES
+    //3 DIP SAUCES
     let aioli = Food(name: "AIOLI", price: 10.0)
     let parmesanAndgarlic = Food(name: "PARMESAN & GARLIC", price: 10.0)
     let hotCheedar = Food(name: "HOT CHEEDAR", price: 10.0)
@@ -99,7 +101,7 @@ class Menu {
     
     //------------------------------------------------------------------------------------------
     
-    //MAINS
+    // 4 MAINS
     let ryggBiff = Food(name: "RYGGBIFF", price: 299.0)
     let oxFile = Food(name: "OXFILÉ", price: 299.0)
     let bourbonBqqRibs = Food(name: "BOURBON BBQ RIBS", price: 209.0)
@@ -129,39 +131,125 @@ class Menu {
         self.food = [snacknShare,burgers,sauces,mains]
     }
     
-    //------------------------------------------------------------------------------------------
-                                      // Dessert Menu
-    //------------------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------------
+                                      //2 Dessert Menu
+    //--------------------------------------------------------------------------------------
     
     
-    // Desserts
+    //1 Desserts
      let chooclateBrowine =  Dessert(name: "CHOCOLATE BROWNIE", price: 59.0)
      let sweetLemonTiramisu = Dessert(name: " SWEET LEMON TIRAMISU", price:39.0)
      let deepFiedBroWine  = Dessert(name: "DEEP FRIED BROWNIE", price:29.0)
      let iceCreamSundae   = Dessert(name: "ICE CREAM SUNDAE", price:49.0)
      let cheeseCake   = Dessert(name: "CHEESE CAKE", price:59.0)
-    
+     let strawberryMilkshake = Dessert(name: "STRAWBERRY MILKSHAKE", price:69.0 )
+     let chocolateMilkshake = Dessert(name: "CHOCOLATE MILKSHAKE", price:69.0 )
      
     func fillDeserts (){
         self.desserts = [chooclateBrowine,sweetLemonTiramisu,deepFiedBroWine,
-        iceCreamSundae,cheeseCake]
-        
+        iceCreamSundae,cheeseCake,strawberryMilkshake,chocolateMilkshake]
     }
 
     
      //------------------------------------------------------------------------------------------
-     //COFFEE DRINKS
-    
+     //2 COFFEE DRINKS
     let espressomartini = Dessert(name: "ESPRESSO MARTINI", price: 119.0)
     let tullamore = Dessert(name: "ULLAMORE IRISH COFFEE", price: 119.0)
     let gallianoMartini = Dessert(name: "GALLIANO MARTINI", price: 119.0)
     let jamaicanCoffe = Dessert(name: "JAMAICAN COFFEE", price: 119.0)
+    let coffe = Dessert(name: "COFFEE", price: 29.0)
+    let tea = Dessert(name: "TEA", price: 29.0)
+    let espressoSmall = Dessert(name: "ESPRESSO SMALL", price: 29.0)
+    let espressoBig = Dessert(name: "ESPRESSO BIG", price: 39.0)
+    let cappucciono = Dessert(name: "CAPPUCCINO", price: 45.0)
+    let coffeLatte  = Dessert(name: "CAFFE LATTE", price: 45.0)
+    
+    
+    func fillCoffeDrinks (){
+        self.coffeDrinks = [espressomartini,tullamore,gallianoMartini,jamaicanCoffe,coffe,tea,
+                     espressoSmall,espressoBig,cappucciono,coffeLatte]
+    }
+    
+    //------------------------------------------------------------------------------------------
+    
+    //3 AVEC
+    
+    let braastadVs = Dessert(name: "BRAASTAD VS", price: 112.0)
+    let boulardCalvados = Dessert(name: "BOULARD CALVADOS", price: 120.0)
+    let makersMars = Dessert(name: "MAKERS MARK", price: 112.0)
+    let limoncelloVillaMassa = Dessert(name: "LIMONCELLO VILLA MASSA", price: 100.0)
+    let bacardiSpiced = Dessert(name: "BACARDI SPICED", price: 100.0)
+    let gentelmanJack = Dessert(name: "GENTLEMAN JACK", price: 144.0)
+    let jackDaniels = Dessert(name: "JACK DANIELS", price: 112.0)
+    let jimBean = Dessert(name: "JIM BEAM", price: 100.0)
+    
+    let famousGrouse = Dessert(name: "FAMOUS GROUSE", price: 104.0)
+    let highlandPark12 = Dessert(name: "HIGHLAND PARK 12", price: 112.0)
+    let macallanDbCask12 = Dessert(name: "MACALLAN DB CASK 12", price: 144.0)
+    let laphroaig10 = Dessert(name: "LAPHROAIG 10", price: 112.0)
+    let theKraken = Dessert(name: "THE KRAKEN", price: 100.0)
+    let bacaradi8Anos = Dessert(name: "BACARDI 8 AÑOS", price: 112.0)
+    let baileys = Dessert(name: "BAILEYS", price: 88.0)
+    let vaccariSambuca = Dessert(name: "VACCARI SAMBUCA", price: 94.0)
+    
+    func fillAvec (){
+        
+        self.avec = [braastadVs,boulardCalvados,makersMars,limoncelloVillaMassa,bacardiSpiced,
+                    gentelmanJack,jackDaniels,jimBean,famousGrouse,highlandPark12,laphroaig10,theKraken,bacaradi8Anos,baileys,vaccariSambuca]
+        }
+    
+    
+    func fillDessertsMenu (){
+        
+        fillDeserts()
+        fillCoffeDrinks()
+        fillAvec()
+        self.allDesserts = [desserts,coffeDrinks,avec]
+        
+    }
+    
+    //--------------------------------------------------------------------------------------
+                                      // Drinks Menu
+    //--------------------------------------------------------------------------------------
+    
+    // 1 COCKTAILS
+    let aperolSpritz = Drink(name: "APEROL SPRITZ", price: 125.0)
+    let vodkaRedBull = Drink(name: "VODKA RED BULL", price:129.0)
+    let classicMargareta = Drink(name: "CLASSIC MARGARITA", price: 119.0 )
+    let classicMintMojito = Drink(name: "CLASSIC MINT MOJITO", price: 119.0)
+    let heroGinFentimansTonic = Drink(name: "HERNÖ GIN & FENTIMANS TONIC", price: 119.0 )
+    let ginAndTonic = Drink(name: "GIN & TONIC", price: 109.0 )
+    let fishShot = Drink(name: "FISHSHOT", price:88.0 )
+    let sourFiskCola = Drink(name: "SOUR FISK COLA", price: 88.0)
+    let gammelDansk = Drink(name: "GAMMEL DANSK", price: 88.0)
+    let fernetBranca = Drink(name: "FERNET BRANCA", price: 88.0)
+    
+    let jimBeamHighBall = Drink(name: "JIM BEAM HIGHBALL", price: 109.0)
+    let jackAndCola = Drink(name: "JACK & COLA", price: 109.0 )
+    let passionFruitCobbler = Drink(name: "PASSION FRUIT COBBLER", price: 125.0 )
+    let negroni = Drink(name: "NEGRONI", price: 109.0)
+    let espressoMartini = Drink(name: "ESPRESSO MARTINI", price: 119.0)
+    let strawberryLemonMocktail = Drink(name: "STRAWBERRY LEMONADE MOCKTAIL", price: 109.0 )
+    let brancaMenta = Drink(name: "BRANCA MENTA", price:88.0 )
+    let bacardiRazz = Drink(name: "BACARDI RAZZ", price: 88.0)
+    let sourFiskIcePear = Drink(name: "SOUR FISK ICE PEAR", price:88.0 )
+    let jackDanielsHoney = Drink(name: "JACK DANIELS HONEY", price: 100.0)
+    
+    
+    func filCoktails (){
+        
+        self.coktails = [aperolSpritz,vodkaRedBull,classicMargareta,classicMintMojito
+        ,heroGinFentimansTonic,ginAndTonic,fishShot,sourFiskCola,gammelDansk,fernetBranca,
+        jimBeamHighBall,jackAndCola,passionFruitCobbler,negroni,espressoMartini,strawberryLemonMocktail,
+        brancaMenta,bacardiRazz,sourFiskIcePear,jackDanielsHoney]
+    }
+    
+    
     
   
     
- 
     
-    
+
     
 }
 

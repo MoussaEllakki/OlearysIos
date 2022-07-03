@@ -21,13 +21,13 @@ class Menu {
     
     //Coktails
     var coktails = [Drink]()
-    
+    var beers = [Drink]()
     
     //-----------------------------------------------------------------------------------
                                       // 1 Food Menu
     //-----------------------------------------------------------------------------------
   
-    // 1 SNACK ́N SHARE
+    // 1 SNACK ́N SHARE -> belogs to food menu
     let hotbuffalowings5Pcs = Food(name:  "Hot BUFFALO WINGS 5P", price: 99.0)
     let hotbuffalowings10Pcs = Food(name: "Hot Buffalo Wings 10P", price: 159.0)
     let hotbuffalowings15Pcs = Food(name: "Hot Buffalo Wings 15P", price: 199.0)
@@ -58,7 +58,7 @@ class Menu {
     //------------------------------------------------------------------------------------------
      
     
-    // 2 BURGERS
+    // 2 BURGERS  -> belogs to food menu
     let chilliCheeseBurger = Food(name: "CHILLI CHEESE BURGER", price: 185.0)
     let baconBbqBurger = Food(name: "BACON BBQ BURGER", price: 185.0)
     let truffleOozingBurger = Food(name: "TRUFFLE OOZING BURGER", price: 185.0)
@@ -83,7 +83,7 @@ class Menu {
     
     //------------------------------------------------------------------------------------------
     
-    //3 DIP SAUCES
+    //3 DIP SAUCES  -> belogs to food menu
     let aioli = Food(name: "AIOLI", price: 10.0)
     let parmesanAndgarlic = Food(name: "PARMESAN & GARLIC", price: 10.0)
     let hotCheedar = Food(name: "HOT CHEEDAR", price: 10.0)
@@ -101,7 +101,7 @@ class Menu {
     
     //------------------------------------------------------------------------------------------
     
-    // 4 MAINS
+    // 4 MAINS  -> belogs to food menu
     let ryggBiff = Food(name: "RYGGBIFF", price: 299.0)
     let oxFile = Food(name: "OXFILÉ", price: 299.0)
     let bourbonBqqRibs = Food(name: "BOURBON BBQ RIBS", price: 209.0)
@@ -136,7 +136,7 @@ class Menu {
     //--------------------------------------------------------------------------------------
     
     
-    //1 Desserts
+    //1 Desserts -> belogs to desserts menu
      let chooclateBrowine =  Dessert(name: "CHOCOLATE BROWNIE", price: 59.0)
      let sweetLemonTiramisu = Dessert(name: " SWEET LEMON TIRAMISU", price:39.0)
      let deepFiedBroWine  = Dessert(name: "DEEP FRIED BROWNIE", price:29.0)
@@ -152,7 +152,7 @@ class Menu {
 
     
      //------------------------------------------------------------------------------------------
-     //2 COFFEE DRINKS
+     //2 COFFEE DRINKS -> belogs to desserts menu
     let espressomartini = Dessert(name: "ESPRESSO MARTINI", price: 119.0)
     let tullamore = Dessert(name: "ULLAMORE IRISH COFFEE", price: 119.0)
     let gallianoMartini = Dessert(name: "GALLIANO MARTINI", price: 119.0)
@@ -172,8 +172,7 @@ class Menu {
     
     //------------------------------------------------------------------------------------------
     
-    //3 AVEC
-    
+    //3 AVEC -> belogs to desserts menu
     let braastadVs = Dessert(name: "BRAASTAD VS", price: 112.0)
     let boulardCalvados = Dessert(name: "BOULARD CALVADOS", price: 120.0)
     let makersMars = Dessert(name: "MAKERS MARK", price: 112.0)
@@ -212,7 +211,7 @@ class Menu {
                                       // Drinks Menu
     //--------------------------------------------------------------------------------------
     
-    // 1 COCKTAILS
+    // 1 COCKTAILS -> belogs to drinks Menu
     let aperolSpritz = Drink(name: "APEROL SPRITZ", price: 125.0)
     let vodkaRedBull = Drink(name: "VODKA RED BULL", price:129.0)
     let classicMargareta = Drink(name: "CLASSIC MARGARITA", price: 119.0 )
@@ -243,11 +242,50 @@ class Menu {
         jimBeamHighBall,jackAndCola,passionFruitCobbler,negroni,espressoMartini,strawberryLemonMocktail,
         brancaMenta,bacardiRazz,sourFiskIcePear,jackDanielsHoney]
     }
+    //------------------------------------------------------------------------------------------
+    
+    // 2 BEER -> belogs to drinks Menu
+    let brooklynLager40cl = Drink(name: "BROOKLYN LAGER 40cl ", price: 72.0)
+    let brooklynLager50cl = Drink(name: "BROOKLYN LAGER 50cl ", price: 90.0)
+    let carlsbergHof40cl = Drink(name: "CARLSBERG HOF 40cl ", price:59.0 )
+    let carlsbergHof50cl = Drink(name: "CARLSBERG HOF 40cl ", price:69.0 )
+    let staropramen40cl = Drink(name: "STAROPRAMEN 40cl ", price:79.0 )
+    let staropramen50 = Drink(name: "STAROPRAMEN 50cl ", price:89.0 )
+    let carlsbergExport40cl = Drink(name: "CARLSBERG EXPORT 40cl ", price:72.0 )
+    let carlsbergExport50cl = Drink(name: "CARLSBERG EXPORT 50cl ", price:82.0 )
+    let brooklynDefenderIpa40cl = Drink(name: "BROOKLYN DEFENDER IPA 40cl ", price:75.0 )
+    let brooklynDefenderIpa50cl = Drink(name: "BROOKLYN DEFENDER IPA 50cl ", price:94.0 )
+    let guinnesDraught = Drink(name: "GUINNESS DRAUGHT", price: 85.0)
+ 
+    let samuelAdamBostonLager = Drink(name: "SAMUEL ADAMS BOSTON LAGER", price:69.0 )
+    let eriksbergLager = Drink(name: "ERIKSBERG LAGER", price: 75.0)
+    let eriksbergKaraktarBarnStenlager =  Drink(name: "ERIKSBERG KARAKTÄR BÄRNSTENSLAGER", price:65.0 )
+    let coronaExtra =  Drink(name: "CORONA EXTRA", price: 69.0)
+    let blancWitbier1664 = Drink(name: "1664 BLANC WITBIER", price: 69.0)
+    let erdingerHefeWeissbier = Drink(name: "ERDINGER HEFE WEISSBIER", price: 85.0)
+    let grimbergenblondeAle = Drink(name: "GRIMBERGEN BLONDE ALE", price:69.0 )
+    let brooklynEipa = Drink(name: "BROOKLYN EIPA", price:79.0 )
+    let lagunitas = Drink(name: "LAGUNITAS IPA", price:79.0 )
+    let brooklynBelAir = Drink(name: "BROOKLYN BEL AIR", price:79.0 )
+    let ncbBreWery = Drink(name: "NCB BREWERY", price: 85.0)
+    let brooklynSpecialEffects = Drink(name: "BROOKLYN SPECIAL EFFECTS", price:45.0)
+    let stigunaNapa = Drink(name: "SIGTUNA NAPA", price:49.0)
+    let carlsBergEko = Drink(name: "CARLSBERG EKO", price: 39.0)
     
     
+    func filBeers (){
+        
+        self.beers = [brooklynLager40cl,brooklynLager50cl,carlsbergHof40cl,carlsbergHof50cl,staropramen40cl,staropramen50,
+        carlsbergExport40cl,carlsbergExport50cl,brooklynDefenderIpa40cl,brooklynDefenderIpa50cl,guinnesDraught,
+        samuelAdamBostonLager,eriksbergLager,eriksbergKaraktarBarnStenlager,coronaExtra,blancWitbier1664,
+        erdingerHefeWeissbier,grimbergenblondeAle,brooklynEipa,lagunitas,brooklynBelAir,ncbBreWery,brooklynSpecialEffects,
+        stigunaNapa,carlsBergEko]
+        
+    }
     
-  
+    //------------------------------------------------------------------------------------------
     
+    // 3 CIDER -> belogs to drinks Menu
     
 
     

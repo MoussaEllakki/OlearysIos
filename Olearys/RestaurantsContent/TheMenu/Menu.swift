@@ -17,11 +17,15 @@ class Menu {
     var desserts = [Dessert]()
     var coffeDrinks = [Dessert]()
     var avec = [Dessert]()
+    var kids = [Dessert]()
     var allDesserts = [[Dessert]]()
-    
+   
     //Coktails
     var coktails = [Drink]()
     var beers = [Drink]()
+    var cidersAndSoda = [Drink]()
+    var wines = [Drink]()
+    
     
     //-----------------------------------------------------------------------------------
                                       // 1 Food Menu
@@ -72,10 +76,8 @@ class Menu {
     let jalapenoPoppers2p = Food(name: "JALAPENO POPPERS 2P", price: 15.0)
     let mozzarellaSticks2p = Food(name: "MOZZARELLA STICKS 2P", price: 15.0)
     let bacon = Food(name: "BACON", price: 10.0)
-    
-   
-    
-    func filBurgers (){
+  
+   func filBurgers (){
         self.burgers = [chilliCheeseBurger,baconBbqBurger,truffleOozingBurger,giantDoubleCheeseBurger,
                         cheedarCheeseBurger,crispyNachoBurger,texMexOumphburger,sweetPotatoFries,
                         cheesyFries,onionRings2p,jalapenoPoppers2p,mozzarellaSticks2p,bacon]
@@ -113,7 +115,7 @@ class Menu {
     
    
     
-    func filMain (){
+    func fillMain (){
         self.mains = [ryggBiff,oxFile,bourbonBqqRibs,fishNChips,creamypastaRäkor,creamypastaOxFile,
                  creamypastaVegetarisk,oLearysMixedGrill]
         
@@ -127,7 +129,7 @@ class Menu {
         filSnacknShare()
         filBurgers()
         filSauces()
-        filMain()
+        fillMain()
         self.food = [snacknShare,burgers,sauces,mains]
     }
     
@@ -144,7 +146,8 @@ class Menu {
      let cheeseCake   = Dessert(name: "CHEESE CAKE", price:59.0)
      let strawberryMilkshake = Dessert(name: "STRAWBERRY MILKSHAKE", price:69.0 )
      let chocolateMilkshake = Dessert(name: "CHOCOLATE MILKSHAKE", price:69.0 )
-     
+   
+    
     func fillDeserts (){
         self.desserts = [chooclateBrowine,sweetLemonTiramisu,deepFiedBroWine,
         iceCreamSundae,cheeseCake,strawberryMilkshake,chocolateMilkshake]
@@ -197,13 +200,32 @@ class Menu {
                     gentelmanJack,jackDaniels,jimBean,famousGrouse,highlandPark12,laphroaig10,theKraken,bacaradi8Anos,baileys,vaccariSambuca]
         }
     
+  //------------------------------------------------------------------------------------------
+    
+    // 4 kids -> belogs to desserts menu
+    let cheesBurger = Dessert(name: "Cheeseburger", price: 69.0 )
+    let fishAndChips = Dessert(name: "FISH & CHIPS", price: 69.9 )
+    let chickenNuggets = Dessert(name: "CHICKEN NUGGETS", price: 69.0 )
+    let quesadilla = Dessert(name: "quesadilla", price: 69.0 )
+    let brownie = Dessert(name: "BROWNIE", price: 35.0)
+    let sundae = Dessert(name: "SUNDAE", price: 29.9)
+    let pancakes = Dessert(name: "PANCAKES", price: 29.0 )
+    
+    
+    
+    func fillKidsMenu (){
+        
+        self.kids = [cheesBurger,fishAndChips,chickenNuggets,quesadilla,brownie,sundae, pancakes]
+        
+    }
     
     func fillDessertsMenu (){
         
         fillDeserts()
         fillCoffeDrinks()
         fillAvec()
-        self.allDesserts = [desserts,coffeDrinks,avec]
+        fillKidsMenu()
+        self.allDesserts = [desserts,coffeDrinks,avec,kids]
         
     }
     
@@ -285,9 +307,107 @@ class Menu {
     
     //------------------------------------------------------------------------------------------
     
-    // 3 CIDER -> belogs to drinks Menu
+    // 3 CIDER & Läsk -> belogs to drinks Menu
+    
+    let boulardCiderEko = Drink(name: "BOULARD CIDRE EKO", price: 75.0 )
+    let somersbySweetCider = Drink(name: "SOMERSBY SWEET CIDER", price: 69.9)
+    let somersbyCider  = Drink(name: "SOMERSBY CIDER 0,0%", price:45.0 )
+    
+    let pepsimax = Drink(name: "PEPSI MAX", price: 39.0)
+    let pepsi = Drink(name: "PEPSI", price: 39.0)
+    let zingo = Drink(name: "ZINGO", price: 39.0)
+    let sevenUp  = Drink(name: "7-UP", price: 39.0)
+    let ramlosa = Drink(name: "RAMLÖSA ", price: 29.0)
+    let redBull  = Drink(name: "RED BULL", price: 49.0)
+    let redBullSugarFree = Drink(name: "RED BULL SUGARFREE", price: 49.0)
+   
+    
+    func fillCiderAndSoda (){
+      
+        self.cidersAndSoda = [boulardCiderEko,somersbySweetCider,somersbyCider,pepsimax,pepsi,
+                             zingo,sevenUp,ramlosa,redBull,redBullSugarFree]
+        
+    }
+
+    //------------------------------------------------------------------------------------------
+    
+    // 4 Wine -> belogs to drinks Menu
+    let champangeBrutMajeurAyalaGlas  = Drink(name: "CHAMPAGNE BRUT MAJEUR AYALA / G", price: 139.0 )
+    let champangeBrutMajeurAyalaFlaska  = Drink(name: "CHAMPAGNE BRUT MAJEUR AYALA / F", price: 869.0 )
+    
+    let cavaJuameSeeraEkoGlas = Drink(name: "CAVA JAUME SERRA EKO / G", price: 89.0 )
+    let cavaJuameSeeraEkoFlaska = Drink(name: "CAVA JAUME SERRA EKO / F", price: 449.0 )
+    
+    let proseccoAbbaziaExtraDryGlas = Drink(name: "PROSECCO ABBAZIA EXTRA DRY / G", price: 89.0 )
+    let proseccoAbbaziaExtraDryFlaska = Drink(name: "PROSECCO ABBAZIA EXTRA DRY / F", price: 449.0 )
+    
+    let vintenseSparklingAlcoholFreeGlas = Drink(name: "VINTENSE SPARKLING Alcohol FREE / G", price: 69.0)
+    let vintenseSparklingAlcoholFreeFlaska = Drink(name: "VINTENSE SPARKLING Alcohol FREE / F", price: 289.0)
+    
+    let loCaTourCreamyChardonnayGlas = Drink(name: "LO.CA.TOUR CREAMY CHARDONNAY / G", price: 119.0)
+    let loCaTourCreamyChardonnayFlaska = Drink(name: "LO.CA.TOUR CREAMY CHARDONNAY / F", price: 496.0)
+    
+    let turckheimPinotBlancEkoGlas = Drink(name: "TURCKHEIM PINOT BLANC EKO / G", price: 119.0 )
+    let turckheimPinotBlancEkoFlaska = Drink(name: "TURCKHEIM PINOT BLANC EKO / F", price: 496.0 )
+    
+    let settesoliGrilloEkoGlas = Drink(name: "SETTESOLI GRILLO EKO / G", price: 89.0 )
+    let settesoliGrilloEkoFlaska = Drink(name: "SETTESOLI GRILLO EKO / F", price: 371.0 )
+    
+    let vintenseChardonnayAlcoholFreeGlas = Drink(name: "VINTENSE CHARDONNAY ALCOHOL FREE / G", price: 69.0 )
+    let vintenseChardonnayAlcoholFreeFlaska = Drink(name: "VINTENSE CHARDONNAY ALCOHOL FREE / F", price: 289.0 )
+    
+    let mariuspeyolCotesDeprovenceRoseGlas = Drink(name: "MARIUS PEYOL CÔTES DE PROVENCE ROSÉ / G", price: 119.0)
+    let mariuspeyolCotesDeprovenceRoseFlaska = Drink(name: "MARIUS PEYOL CÔTES DE PROVENCE ROSÉ / F", price: 496.0 )
+    
+    let settesoliRoseEkoGlas = Drink(name: "SETTESOLI ROSÉ EKO / G", price: 89.0)
+    let settesoliRoseEkoFlaska = Drink(name: "SETTESOLI ROSÉ EKO / F", price: 371.0)
+    
+    let loCaTourZinfandelGlas = Drink(name: "LO.CA.TOUR ZINFANDEL / G", price: 119.0)
+    let loCaTourZinfandelFlaska = Drink(name: "LO.CA.TOUR ZINFANDEL / F", price: 496.0)
+    
+    let poggioAlCasoneChiantiSuperioreGlas = Drink(name: "POGGIO AL CASONE CHIANTI SUPERIORE / G", price: 119.0 )
+    let poggioAlCasoneChiantiSuperioreFlaska = Drink(name: "POGGIO AL CASONE CHIANTI SUPERIORE / F", price: 496.0)
+    
+    let faustinoViiRiojaGlas  = Drink(name: "FAUSTINO VII RIOJA / G", price: 119.0)
+    let faustinoViiRiojaFlaska  = Drink(name: "FAUSTINO VII RIOJA / F", price:496.0 )
+    
+    let paulJabouletCotesDuParalleleGlas = Drink(name: "PAUL JABOULET CÔTES DU RHÔNE PARALLÈLE / G", price: 119.0)
+    let paulJabouletCotesDuParalleleFlaska = Drink(name: "PAUL JABOULET CÔTES DU RHÔNE PARALLÈLE / F", price: 496.0 )
+    
+    let settesoliNeroDAvolaEkoGlas = Drink(name: "SETTESOLI NERO D ́AVOLA EKO / G", price: 89.0)
+    let settesoliNeroDAvolaEkoFlaska = Drink(name: "SETTESOLI NERO D ́AVOLA EKO / F", price: 371.0)
+    
+    let vintenseMerlotAlcoholoFreeGlas = Drink(name: "VINTENSE MERLOT Alcohol free / G", price: 69.0)
+    let vintenseMerlotAlcoholoFreeflaska = Drink(name: "VINTENSE MERLOT Alcohol free / F", price: 289.0 )
+  
+    
+    func fillWines (){
+        wines = [champangeBrutMajeurAyalaGlas,champangeBrutMajeurAyalaFlaska,cavaJuameSeeraEkoGlas,cavaJuameSeeraEkoFlaska,
+        proseccoAbbaziaExtraDryGlas,proseccoAbbaziaExtraDryFlaska,vintenseSparklingAlcoholFreeGlas,vintenseSparklingAlcoholFreeFlaska,loCaTourCreamyChardonnayGlas,loCaTourCreamyChardonnayFlaska,turckheimPinotBlancEkoGlas,turckheimPinotBlancEkoFlaska,settesoliGrilloEkoGlas,settesoliRoseEkoFlaska,vintenseChardonnayAlcoholFreeGlas,vintenseChardonnayAlcoholFreeFlaska,mariuspeyolCotesDeprovenceRoseGlas,
+        mariuspeyolCotesDeprovenceRoseFlaska,settesoliRoseEkoGlas,settesoliRoseEkoFlaska,loCaTourZinfandelGlas,loCaTourZinfandelFlaska,poggioAlCasoneChiantiSuperioreGlas,poggioAlCasoneChiantiSuperioreFlaska,
+        faustinoViiRiojaGlas,faustinoViiRiojaFlaska,paulJabouletCotesDuParalleleGlas,paulJabouletCotesDuParalleleFlaska,
+        settesoliNeroDAvolaEkoGlas,settesoliNeroDAvolaEkoFlaska,vintenseMerlotAlcoholoFreeGlas,vintenseMerlotAlcoholoFreeflaska]
+        
+    }
     
 
+    func fillDrinksMenu (){
+        
+        filCoktails ()
+        filBeers ()
+        fillCiderAndSoda ()
+        fillWines()
+    }
+  
+    
+    
+    
+    
+
+  
+    
+
+    
     
 }
 

@@ -1,42 +1,70 @@
 
 import UIKit
 
-class TakeOrderViewController: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource {
+class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource{
+   
   
+    @IBOutlet weak var tableNumberLabel: UILabel!
+    @IBOutlet weak var tabletotalLabel: UILabel!
+    @IBOutlet weak var guestNumberLabel: UILabel!
+    @IBOutlet weak var guestorderCollectionView: UICollectionView!
     
-
-    @IBOutlet weak var menuColleCtionView: UICollectionView!
-    
-    let getDataFromeFireBase = GetDataFromeFireBase()
-    var tablesForDelete :[String] = []
-    
+    var fordelete = ["GIANT DOUBLE CHEESE BURGER" , "GIANT DOUBLE CHEESE BURGER" , "GIANT DOUBLE CHEESE BURGER" ]
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        menuColleCtionView.delegate = self
-        menuColleCtionView.dataSource = self
-        
-            getDataFromeFireBase.getTables { [self] in
-                 tablesForDelete = getDataFromeFireBase.tables
-              menuColleCtionView.reloadData()
-            }
+    
+       
+     
     
     }
     
 
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tablesForDelete.count
-    }
     
+        return fordelete.count
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "takeOrderCell", for: indexPath) as! TakeOrderCollectionViewCell
-         cell.typeLabel.text = "num \(tablesForDelete[indexPath.row])"
-        return cell
         
+        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "guestOrderCell", for: indexPath) as! GuestOrdersCollectionViewCell
+        
+        cell.guesrOrderLabel.layer.masksToBounds = true
+        cell.guesrOrderLabel.layer.cornerRadius = 10
+        cell.guesrOrderLabel.text = fordelete[indexPath.row]
+        return cell
     }
     
+    
+    
+    
+}
 
+
+
+extension TakeOrderViewController{
+    
+    
+    @IBAction func foodButton(_ sender: Any) {
+        
+    
+    }
+    
+    @IBAction func drinksButton(_ sender: Any) {
+        
+  
+    }
+    
+    @IBAction func dessertsButton(_ sender: Any) {
+        
+  
+    }
+    
+    
+    @IBAction func kidsbutton(_ sender: Any) {
+        
+ 
+    }
+    
+    
 }

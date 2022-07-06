@@ -1,7 +1,7 @@
 
 import UIKit
 
-class KitchenViewController: UIViewController  , UICollectionViewDelegate , UICollectionViewDataSource{
+class KitchenViewController: UIViewController   {
   
     
     @IBOutlet weak var ordersCollectionView: UICollectionView!
@@ -9,15 +9,12 @@ class KitchenViewController: UIViewController  , UICollectionViewDelegate , UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        ordersCollectionView.delegate = self
-        ordersCollectionView.dataSource = self
-
+       
     }
     
 
     
-    
+    /*
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     
@@ -33,6 +30,7 @@ class KitchenViewController: UIViewController  , UICollectionViewDelegate , UICo
         
         
     }
+     */
   
 
 }

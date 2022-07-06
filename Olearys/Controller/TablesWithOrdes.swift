@@ -1,7 +1,7 @@
 
 import UIKit
 
-class AttGoraViewController: UIViewController , UICollectionViewDataSource , UICollectionViewDelegate{
+class TablesWithOrdes: UIViewController , UICollectionViewDataSource , UICollectionViewDelegate{
 
     
     @IBOutlet weak var attGoraCollectionView: UICollectionView!

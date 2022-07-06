@@ -243,12 +243,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SA3-zs-fkd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502" y="628"/>
+            <point key="canvasLocation" x="417" y="641"/>
         </scene>
-        <!--Att Gora View Controller-->
+        <!--Tables With Ordes-->
         <scene sceneID="e3W-z4-WMK">
             <objects>
-                <viewController id="vQz-x2-sgf" customClass="AttGoraViewController" customModule="Olearys" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vQz-x2-sgf" customClass="TablesWithOrdes" customModule="Olearys" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N9V-eu-8xJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,7 +343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUa-OD-95p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330.7692307692307" y="-68.246445497630333"/>
+            <point key="canvasLocation" x="1331" y="-112"/>
         </scene>
         <!--Kitchen View Controller-->
         <scene sceneID="Edj-Ba-Snh">
@@ -453,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3M-36-Iqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2127.6923076923076" y="-68.246445497630333"/>
+            <point key="canvasLocation" x="2128" y="-112"/>
         </scene>
         <!--Payment View Controller-->
         <scene sceneID="A2V-EW-QYa">
@@ -478,7 +478,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuC-Xg-InM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1370.7692307692307" y="627.7251184834123"/>
+            <point key="canvasLocation" x="1331" y="641"/>
         </scene>
         <!--Tables View Controller-->
         <scene sceneID="wJm-ud-RIU">
@@ -581,7 +581,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Uw-L7-28n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330.7692307692307" y="-729.38388625592415"/>
+            <point key="canvasLocation" x="1331" y="-791"/>
         </scene>
         <!--Item-->
         <scene sceneID="fUu-yu-z6s">
@@ -751,7 +751,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4B-aB-OQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2130.7692307692305" y="-729.38388625592415"/>
+            <point key="canvasLocation" x="2128" y="-791"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sVl-tf-P8i">

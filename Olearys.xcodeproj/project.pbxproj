@@ -17,8 +17,6 @@
 		B54BB920286F3AC6006F0860 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB91F286F3AC6006F0860 /* Food.swift */; };
 		B54BB922286F3B15006F0860 /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB921286F3B15006F0860 /* Dessert.swift */; };
 		B54BB924286F3B30006F0860 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB923286F3B30006F0860 /* Drink.swift */; };
-		B54BB928286F3B5D006F0860 /* GameDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB927286F3B5D006F0860 /* GameDay.swift */; };
-		B54BB92A286F3BD0006F0860 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB929286F3BD0006F0860 /* Menu.swift */; };
 		B57C9883286A200F00993F24 /* OrdersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C9882286A200F00993F24 /* OrdersCollectionViewCell.swift */; };
 		B57C9885286A204A00993F24 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C9884286A204A00993F24 /* FoodTableViewCell.swift */; };
 		B58F694B284E4A4B005BB074 /* MessageForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F694A284E4A4B005BB074 /* MessageForUser.swift */; };
@@ -39,12 +37,16 @@
 		B5BAA461282D5ABF00541501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BAA45F282D5ABF00541501 /* LaunchScreen.storyboard */; };
 		B5BAA469282D5B9000541501 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BAA468282D5B9000541501 /* GoogleService-Info.plist */; };
 		B5BE176F2864E84600972627 /* TakeOrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE176E2864E84600972627 /* TakeOrderCollectionViewCell.swift */; };
-		B5D29BB4285334DF00357F94 /* AttGoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB3285334DF00357F94 /* AttGoraViewController.swift */; };
+		B5D29BB4285334DF00357F94 /* TablesWithOrdes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB3285334DF00357F94 /* TablesWithOrdes.swift */; };
 		B5D29BB6285337C100357F94 /* ForTakingPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */; };
 		B5D29BB82853395900357F94 /* TakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB72853395900357F94 /* TakeOrderViewController.swift */; };
 		B5D29BBA2853399700357F94 /* KitchenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB92853399700357F94 /* KitchenViewController.swift */; };
 		B5D29BBC285339C100357F94 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BBB285339C100357F94 /* PaymentViewController.swift */; };
 		B5DBA3662656F8E546769CCD /* Pods_Olearys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A75DE56CB6D45CCBD5636D /* Pods_Olearys.framework */; };
+		B5F20204287473310076781B /* Drinksmenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20203287473310076781B /* Drinksmenus.swift */; };
+		B5F2021128747A190076781B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2021028747A190076781B /* Menu.swift */; };
+		B5F202162875476B0076781B /* FoodMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F202152875476B0076781B /* FoodMenus.swift */; };
+		B5F2021828754A040076781B /* DessertsMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2021728754A040076781B /* DessertsMenus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,8 +61,6 @@
 		B54BB91F286F3AC6006F0860 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		B54BB921286F3B15006F0860 /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
 		B54BB923286F3B30006F0860 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
-		B54BB927286F3B5D006F0860 /* GameDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDay.swift; sourceTree = "<group>"; };
-		B54BB929286F3BD0006F0860 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		B57C9882286A200F00993F24 /* OrdersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCollectionViewCell.swift; sourceTree = "<group>"; };
 		B57C9884286A204A00993F24 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		B58F694A284E4A4B005BB074 /* MessageForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageForUser.swift; sourceTree = "<group>"; };
@@ -83,11 +83,15 @@
 		B5BAA462282D5ABF00541501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BAA468282D5B9000541501 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5BE176E2864E84600972627 /* TakeOrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOrderCollectionViewCell.swift; sourceTree = "<group>"; };
-		B5D29BB3285334DF00357F94 /* AttGoraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttGoraViewController.swift; sourceTree = "<group>"; };
+		B5D29BB3285334DF00357F94 /* TablesWithOrdes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesWithOrdes.swift; sourceTree = "<group>"; };
 		B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForTakingPaymentViewController.swift; sourceTree = "<group>"; };
 		B5D29BB72853395900357F94 /* TakeOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOrderViewController.swift; sourceTree = "<group>"; };
 		B5D29BB92853399700357F94 /* KitchenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenViewController.swift; sourceTree = "<group>"; };
 		B5D29BBB285339C100357F94 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		B5F20203287473310076781B /* Drinksmenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinksmenus.swift; sourceTree = "<group>"; };
+		B5F2021028747A190076781B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		B5F202152875476B0076781B /* FoodMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMenus.swift; sourceTree = "<group>"; };
+		B5F2021728754A040076781B /* DessertsMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsMenus.swift; sourceTree = "<group>"; };
 		C45264875E2A80136F6DD3A2 /* Pods-Olearys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olearys.release.xcconfig"; path = "Target Support Files/Pods-Olearys/Pods-Olearys.release.xcconfig"; sourceTree = "<group>"; };
 		D5A75DE56CB6D45CCBD5636D /* Pods_Olearys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Olearys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,19 +114,6 @@
 				D5A75DE56CB6D45CCBD5636D /* Pods_Olearys.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B512B7C92863B427005891B1 /* TheMenu */ = {
-			isa = PBXGroup;
-			children = (
-				B512B7CC2863B472005891B1 /* Type.swift */,
-				B54BB91F286F3AC6006F0860 /* Food.swift */,
-				B54BB921286F3B15006F0860 /* Dessert.swift */,
-				B54BB923286F3B30006F0860 /* Drink.swift */,
-				B54BB927286F3B5D006F0860 /* GameDay.swift */,
-				B54BB929286F3BD0006F0860 /* Menu.swift */,
-			);
-			path = TheMenu;
 			sourceTree = "<group>";
 		};
 		B53359292869746C00391544 /* FireBaseGrouo */ = {
@@ -188,10 +179,10 @@
 				B5BAA458282D5ABD00541501 /* LogInViewController.swift */,
 				B5B8E25B2831AB4F00D18C10 /* MainViewController.swift */,
 				B5B8E25D2831AF4A00D18C10 /* TablesViewController.swift */,
-				B5D29BB3285334DF00357F94 /* AttGoraViewController.swift */,
-				B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */,
+				B5D29BB3285334DF00357F94 /* TablesWithOrdes.swift */,
 				B5D29BB72853395900357F94 /* TakeOrderViewController.swift */,
 				B5D29BB92853399700357F94 /* KitchenViewController.swift */,
+				B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */,
 				B5D29BBB285339C100357F94 /* PaymentViewController.swift */,
 			);
 			path = Controller;
@@ -212,7 +203,12 @@
 		B5D29BBD28533A9A00357F94 /* RestaurantsContent */ = {
 			isa = PBXGroup;
 			children = (
-				B512B7C92863B427005891B1 /* TheMenu */,
+				B5F2021428748A7B0076781B /* Menus */,
+				B54BB91F286F3AC6006F0860 /* Food.swift */,
+				B54BB923286F3B30006F0860 /* Drink.swift */,
+				B54BB921286F3B15006F0860 /* Dessert.swift */,
+				B512B7CC2863B472005891B1 /* Type.swift */,
+				B5F2021028747A190076781B /* Menu.swift */,
 				B5B8E14B282DA9FD00D18C10 /* Order.swift */,
 				B5B8E14F282DAA7A00D18C10 /* Guest.swift */,
 				B5B8E155282DAC6300D18C10 /* Status.swift */,
@@ -221,6 +217,16 @@
 				B5B8E147282DA98100D18C10 /* Table.swift */,
 			);
 			path = RestaurantsContent;
+			sourceTree = "<group>";
+		};
+		B5F2021428748A7B0076781B /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				B5F202152875476B0076781B /* FoodMenus.swift */,
+				B5F20203287473310076781B /* Drinksmenus.swift */,
+				B5F2021728754A040076781B /* DessertsMenus.swift */,
+			);
+			path = Menus;
 			sourceTree = "<group>";
 		};
 		C43E19F29705633D7E4F1312 /* Pods */ = {
@@ -350,11 +356,12 @@
 			files = (
 				B5B8E15A282DB1D500D18C10 /* Payment.swift in Sources */,
 				B5246200286959F800422C1B /* GetDataFromeFireBase.swift in Sources */,
-				B54BB928286F3B5D006F0860 /* GameDay.swift in Sources */,
 				B53D0741286577BE00A14040 /* TablesCollectionViewCell.swift in Sources */,
+				B5F202162875476B0076781B /* FoodMenus.swift in Sources */,
 				B5D29BBA2853399700357F94 /* KitchenViewController.swift in Sources */,
 				B5BAA459282D5ABD00541501 /* LogInViewController.swift in Sources */,
 				B57C9883286A200F00993F24 /* OrdersCollectionViewCell.swift in Sources */,
+				B5F20204287473310076781B /* Drinksmenus.swift in Sources */,
 				B5B8E150282DAA7A00D18C10 /* Guest.swift in Sources */,
 				B5BE176F2864E84600972627 /* TakeOrderCollectionViewCell.swift in Sources */,
 				B5B8E25E2831AF4A00D18C10 /* TablesViewController.swift in Sources */,
@@ -365,19 +372,20 @@
 				B5B8E15C282DBBA200D18C10 /* Restaurant.swift in Sources */,
 				B524620228695A5E00422C1B /* UpdateDataInFireBase.swift in Sources */,
 				B5D29BB6285337C100357F94 /* ForTakingPaymentViewController.swift in Sources */,
+				B5F2021828754A040076781B /* DessertsMenus.swift in Sources */,
 				B5B8E148282DA98100D18C10 /* Table.swift in Sources */,
 				B54BB920286F3AC6006F0860 /* Food.swift in Sources */,
 				B5B8E25C2831AB4F00D18C10 /* MainViewController.swift in Sources */,
 				B5BAA455282D5ABD00541501 /* AppDelegate.swift in Sources */,
 				B57C9885286A204A00993F24 /* FoodTableViewCell.swift in Sources */,
 				B5BAA457282D5ABD00541501 /* SceneDelegate.swift in Sources */,
-				B5D29BB4285334DF00357F94 /* AttGoraViewController.swift in Sources */,
+				B5D29BB4285334DF00357F94 /* TablesWithOrdes.swift in Sources */,
 				B5D29BB82853395900357F94 /* TakeOrderViewController.swift in Sources */,
 				B5D29BBC285339C100357F94 /* PaymentViewController.swift in Sources */,
 				B52461FE286959C900422C1B /* SetDataInFireBase.swift in Sources */,
 				B5B8E146282DA90F00D18C10 /* BuildRestaurant.swift in Sources */,
 				B58F694B284E4A4B005BB074 /* MessageForUser.swift in Sources */,
-				B54BB92A286F3BD0006F0860 /* Menu.swift in Sources */,
+				B5F2021128747A190076781B /* Menu.swift in Sources */,
 				B5B8E14C282DA9FD00D18C10 /* Order.swift in Sources */,
 				B533592D2869772700391544 /* Oneinstance.swift in Sources */,
 				B5B8E156282DAC6300D18C10 /* Status.swift in Sources */,

@@ -1,0 +1,34 @@
+
+import Foundation
+
+
+class KidsMenus {
+    
+    let kidsFoodMenu = Menu()
+    let kidsDessertsMenu = Menu()
+    
+    init(){
+        
+        // Kids Food
+        let cheesBurger = Dessert(name: "Cheeseburger", price: 69.0 )
+        let fishAndChips = Dessert(name: "FISH & CHIPS", price: 69.9 )
+        let chickenNuggets = Dessert(name: "CHICKEN NUGGETS", price: 69.0 )
+        let quesadilla = Dessert(name: "quesadilla", price: 69.0 )
+        
+        self.kidsFoodMenu.menueTittle = "Kids Menu"
+        self.kidsFoodMenu.Menutypes = [cheesBurger,fishAndChips,chickenNuggets,quesadilla]
+        
+        //---------------------------------------------------------------------------------
+        // Kids Desserts
+        let brownie = Dessert(name: "BROWNIE", price: 35.0)
+        let sundae = Dessert(name: "SUNDAE", price: 29.9)
+        let pancakes = Dessert(name: "PANCAKES", price: 29.0 )
+        
+        self.kidsDessertsMenu.menueTittle = "Kids Desserts"
+        self.kidsDessertsMenu.Menutypes = [brownie,sundae, pancakes]
+
+        
+    }
+    
+    
+}

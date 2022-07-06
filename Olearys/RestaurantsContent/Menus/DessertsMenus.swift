@@ -9,7 +9,7 @@ class DessertsMenus {
     var dessertsMenu = Menu()
     var coffeDrinksMenu = Menu()
     var avecMenu = Menu()
-    var kidsMenu = Menu()
+    
     var allDessertsMenus = [Menu]()
     
     init (){
@@ -70,21 +70,8 @@ class DessertsMenus {
         self.avecMenu.menueTittle = "Avec"
         self.avecMenu.Menutypes = [braastadVs,boulardCalvados,makersMars,limoncelloVillaMassa,bacardiSpiced,
                         gentelmanJack,jackDaniels,jimBean,famousGrouse,highlandPark12,laphroaig10,theKraken,bacaradi8Anos,baileys,vaccariSambuca]
-        //------------------------------------------------------------------------------------------
         
-        // 4 kids -> belogs to desserts menu
-        let cheesBurger = Dessert(name: "Cheeseburger", price: 69.0 )
-        let fishAndChips = Dessert(name: "FISH & CHIPS", price: 69.9 )
-        let chickenNuggets = Dessert(name: "CHICKEN NUGGETS", price: 69.0 )
-        let quesadilla = Dessert(name: "quesadilla", price: 69.0 )
-        let brownie = Dessert(name: "BROWNIE", price: 35.0)
-        let sundae = Dessert(name: "SUNDAE", price: 29.9)
-        let pancakes = Dessert(name: "PANCAKES", price: 29.0 )
-        
-        
-        self.kidsMenu.menueTittle =  "Kids"
-        self.kidsMenu.Menutypes = [cheesBurger,fishAndChips,chickenNuggets,quesadilla,brownie,sundae, pancakes]
-        self.allDessertsMenus = [dessertsMenu,coffeDrinksMenu,avecMenu,kidsMenu]
+        self.allDessertsMenus = [dessertsMenu,coffeDrinksMenu,avecMenu]
             
         }
     

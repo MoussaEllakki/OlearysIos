@@ -47,6 +47,7 @@
 		B5F2021128747A190076781B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2021028747A190076781B /* Menu.swift */; };
 		B5F202162875476B0076781B /* FoodMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F202152875476B0076781B /* FoodMenus.swift */; };
 		B5F2021828754A040076781B /* DessertsMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2021728754A040076781B /* DessertsMenus.swift */; };
+		B5F2021A2875551C0076781B /* KidsMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F202192875551C0076781B /* KidsMenus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		B5F2021028747A190076781B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		B5F202152875476B0076781B /* FoodMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMenus.swift; sourceTree = "<group>"; };
 		B5F2021728754A040076781B /* DessertsMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsMenus.swift; sourceTree = "<group>"; };
+		B5F202192875551C0076781B /* KidsMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMenus.swift; sourceTree = "<group>"; };
 		C45264875E2A80136F6DD3A2 /* Pods-Olearys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olearys.release.xcconfig"; path = "Target Support Files/Pods-Olearys/Pods-Olearys.release.xcconfig"; sourceTree = "<group>"; };
 		D5A75DE56CB6D45CCBD5636D /* Pods_Olearys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Olearys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -225,6 +227,7 @@
 				B5F202152875476B0076781B /* FoodMenus.swift */,
 				B5F20203287473310076781B /* Drinksmenus.swift */,
 				B5F2021728754A040076781B /* DessertsMenus.swift */,
+				B5F202192875551C0076781B /* KidsMenus.swift */,
 			);
 			path = Menus;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				B5F2021828754A040076781B /* DessertsMenus.swift in Sources */,
 				B5B8E148282DA98100D18C10 /* Table.swift in Sources */,
 				B54BB920286F3AC6006F0860 /* Food.swift in Sources */,
+				B5F2021A2875551C0076781B /* KidsMenus.swift in Sources */,
 				B5B8E25C2831AB4F00D18C10 /* MainViewController.swift in Sources */,
 				B5BAA455282D5ABD00541501 /* AppDelegate.swift in Sources */,
 				B57C9885286A204A00993F24 /* FoodTableViewCell.swift in Sources */,

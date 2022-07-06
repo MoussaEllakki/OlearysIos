@@ -36,8 +36,10 @@ class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollecti
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "foodTypeCell", for: indexPath) as! FoodCollectionViewCell
         
-        cell.foodNamelabel.text = menu[indexPath.row].name
+        cell.foodNamelabel.text = "\(menu[indexPath.row].name) \(menu[indexPath.row].price)"
         
+        cell.foodNamelabel.layer.masksToBounds = true
+        cell.foodNamelabel.layer.cornerRadius = 10
         return cell
         
         

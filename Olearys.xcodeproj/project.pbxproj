@@ -41,6 +41,9 @@
 		B5D29BBA2853399700357F94 /* KitchenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB92853399700357F94 /* KitchenViewController.swift */; };
 		B5D29BBC285339C100357F94 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BBB285339C100357F94 /* PaymentViewController.swift */; };
 		B5DBA3662656F8E546769CCD /* Pods_Olearys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A75DE56CB6D45CCBD5636D /* Pods_Olearys.framework */; };
+		B5E93DCF2875972500B9E535 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E93DCE2875972500B9E535 /* FoodCollectionViewCell.swift */; };
+		B5E93DD328759A7200B9E535 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E93DD228759A7200B9E535 /* MenuTableViewCell.swift */; };
+		B5E93DD52875ABA900B9E535 /* ShowMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E93DD42875ABA900B9E535 /* ShowMenu.swift */; };
 		B5F20204287473310076781B /* Drinksmenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20203287473310076781B /* Drinksmenus.swift */; };
 		B5F2021128747A190076781B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2021028747A190076781B /* Menu.swift */; };
 		B5F202162875476B0076781B /* FoodMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F202152875476B0076781B /* FoodMenus.swift */; };
@@ -86,6 +89,9 @@
 		B5D29BB72853395900357F94 /* TakeOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOrderViewController.swift; sourceTree = "<group>"; };
 		B5D29BB92853399700357F94 /* KitchenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenViewController.swift; sourceTree = "<group>"; };
 		B5D29BBB285339C100357F94 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		B5E93DCE2875972500B9E535 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5E93DD228759A7200B9E535 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		B5E93DD42875ABA900B9E535 /* ShowMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMenu.swift; sourceTree = "<group>"; };
 		B5F20203287473310076781B /* Drinksmenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinksmenus.swift; sourceTree = "<group>"; };
 		B5F2021028747A190076781B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		B5F202152875476B0076781B /* FoodMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMenus.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 				B53359292869746C00391544 /* FireBaseGrouo */,
 				B58F694A284E4A4B005BB074 /* MessageForUser.swift */,
 				B533592C2869772700391544 /* Oneinstance.swift */,
+				B5E93DD42875ABA900B9E535 /* ShowMenu.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +202,8 @@
 				B533592E28697DE100391544 /* AttGoraCollectionViewCell.swift */,
 				B57C9884286A204A00993F24 /* FoodTableViewCell.swift */,
 				B5F2023D28757FC80076781B /* GuestOrdersCollectionViewCell.swift */,
+				B5E93DCE2875972500B9E535 /* FoodCollectionViewCell.swift */,
+				B5E93DD228759A7200B9E535 /* MenuTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -355,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B8E15A282DB1D500D18C10 /* Payment.swift in Sources */,
+				B5E93DD52875ABA900B9E535 /* ShowMenu.swift in Sources */,
 				B5246200286959F800422C1B /* GetDataFromeFireBase.swift in Sources */,
 				B53D0741286577BE00A14040 /* TablesCollectionViewCell.swift in Sources */,
 				B5F202162875476B0076781B /* FoodMenus.swift in Sources */,
@@ -385,9 +395,11 @@
 				B52461FE286959C900422C1B /* SetDataInFireBase.swift in Sources */,
 				B5B8E146282DA90F00D18C10 /* BuildRestaurant.swift in Sources */,
 				B58F694B284E4A4B005BB074 /* MessageForUser.swift in Sources */,
+				B5E93DD328759A7200B9E535 /* MenuTableViewCell.swift in Sources */,
 				B5F2021128747A190076781B /* Menu.swift in Sources */,
 				B5B8E14C282DA9FD00D18C10 /* Order.swift in Sources */,
 				B533592D2869772700391544 /* Oneinstance.swift in Sources */,
+				B5E93DCF2875972500B9E535 /* FoodCollectionViewCell.swift in Sources */,
 				B5B8E156282DAC6300D18C10 /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

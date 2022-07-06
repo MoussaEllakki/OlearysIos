@@ -6,6 +6,7 @@ class KidsMenus {
     
     let kidsFoodMenu = Menu()
     let kidsDessertsMenu = Menu()
+    var kidsMenu = [Menu]()
     
     init(){
         
@@ -26,7 +27,8 @@ class KidsMenus {
         
         self.kidsDessertsMenu.menueTittle = "Kids Desserts"
         self.kidsDessertsMenu.Menutypes = [brownie,sundae, pancakes]
-
+        
+        self.kidsMenu = [kidsFoodMenu,kidsDessertsMenu]
         
     }
     

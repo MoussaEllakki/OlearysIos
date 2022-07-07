@@ -43,11 +43,18 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        
-        let segueToTakeOrderView = performSegue(withIdentifier: "toTakeOrderView", sender: "aaa")
+        let segueToTakeOrderView = performSegue(withIdentifier: "toTakeOrderView", sender: indexPath.row)
         
     }
     
   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        var takeOrderView = segue.destination as! TakeOrderViewController
+        takeOrderView.tableNumber =  String (sender as! Int)
+        
+    }
+    
     
     
 

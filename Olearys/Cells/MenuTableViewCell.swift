@@ -6,6 +6,7 @@ class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollecti
 
     @IBOutlet weak var menuCollectionView: UICollectionView!
     @IBOutlet weak var menuTittlelabel: UILabel!
+    var takeOrderViewController = TakeOrderViewController()
     
     var menu = [Type]()
     
@@ -46,6 +47,17 @@ class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollecti
     }
     
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+     
+  
+        takeOrderViewController.visaGuestOrder( viewController : takeOrderViewController   , order: menu[indexPath.row])
+            
+            
+        
+        
+    }
+
     
     
 

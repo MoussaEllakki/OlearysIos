@@ -2,8 +2,8 @@
 import UIKit
 
 class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollectionViewDataSource{
-   
-
+    
+    
     @IBOutlet weak var menuCollectionView: UICollectionView!
     @IBOutlet weak var menuTittlelabel: UILabel!
     var takeOrderViewController = TakeOrderViewController()
@@ -12,25 +12,16 @@ class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollecti
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         menuCollectionView.delegate = self
         menuCollectionView.dataSource = self
-   
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-   
     }
     
-    
-    
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return menu.count
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -38,27 +29,19 @@ class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollecti
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "foodTypeCell", for: indexPath) as! FoodCollectionViewCell
         
         cell.foodNamelabel.text = "\(menu[indexPath.row].name) \(menu[indexPath.row].price)"
-        
         cell.foodNamelabel.layer.masksToBounds = true
         cell.foodNamelabel.layer.cornerRadius = 10
         return cell
-        
-        
     }
+    
+    
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-     
-  
-        takeOrderViewController.visaGuestOrder( viewController : takeOrderViewController   , order: menu[indexPath.row])
-            
-            
-        
+      
+        takeOrderViewController.showGuestOrder( viewController : takeOrderViewController   , order: menu[indexPath.row])
         
     }
-
     
-    
-
 }

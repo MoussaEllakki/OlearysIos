@@ -24,14 +24,11 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
     let guest = Guest()
     var guestOrders = [Type]()
     
-  
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         giveAllButtonRedColor()
         foodBtn.backgroundColor = .green
         table.number = tableNumber
-        
     }
     
     
@@ -59,36 +56,35 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
             
             cell.menuTittlelabel.text = foodMenu.foodMenus[indexPath.row].menueTittle
             cell.menu = foodMenu.foodMenus[indexPath.row].Menutypes
-          
-         } else if (whichMenu == ShowMenu.drinksMenus){
+            
+        } else if (whichMenu == ShowMenu.drinksMenus){
             
             cell.menuTittlelabel.text = drinkMenu.drinksmenu[indexPath.row].menueTittle
             cell.menu = drinkMenu.drinksmenu[indexPath.row].Menutypes
-         
+            
         } else if (whichMenu == ShowMenu.dessertsMenus){
             
             cell.menuTittlelabel.text = desertsMenu.allDessertsMenus[indexPath.row].menueTittle
             cell.menu = desertsMenu.allDessertsMenus[indexPath.row].Menutypes
-       
+            
         }else{
-        
+            
             cell.menuTittlelabel.text = kidsMenus.kidsMenu[indexPath.row].menueTittle
             cell.menu = kidsMenus.kidsMenu[indexPath.row].Menutypes
-        
+            
         }
         
     
+  
         cell.takeOrderViewController = self
+  
+        
         cell.menuCollectionView.reloadData()
         cell.menuTittlelabel.layer.masksToBounds = true
         cell.menuTittlelabel.layer.cornerRadius = 10
         return cell
         
-        }
-    
-    
-    
-    
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -99,6 +95,8 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
         
         let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "guestOrderCell", for: indexPath) as! GuestOrdersCollectionViewCell
         
+        cell.deleteOrderButton.tag = indexPath.row
+        cell.deleteOrderButton.addTarget(self, action: #selector(deleteGuestOrder(sender:)), for: .touchUpInside)
         cell.guesrOrderLabel.layer.masksToBounds = true
         cell.guesrOrderLabel.layer.cornerRadius = 10
         cell.guesrOrderLabel.text = guestOrders[indexPath.row].name
@@ -106,15 +104,21 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
     }
     
     
-    
-    
-    
-    
-    func visaGuestOrder (viewController : TakeOrderViewController , order : Type){
-      
+  
+    func showGuestOrder (viewController : TakeOrderViewController , order : Type){
+   
         guestOrders.append(order)
+   
         viewController.guestorderCollectionView.reloadData()
+    }
     
+    
+    @objc
+    func deleteGuestOrder (sender : UIButton){
+    
+        guestOrders.remove(at: sender.tag)
+        guestorderCollectionView.reloadData()
+        
     }
     
     
@@ -122,25 +126,10 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 extension TakeOrderViewController{
     
-
+    
     @IBAction func foodButton(_ sender: Any) {
-        
         whichMenu = ShowMenu.foodMenus
         menuTableView.reloadData()
         giveAllButtonRedColor()
@@ -163,7 +152,6 @@ extension TakeOrderViewController{
         dessertsBtn.backgroundColor = .green
     }
     
-    
     @IBAction func kidsbutton(_ sender: Any) {
         whichMenu = ShowMenu.kidsMenus
         menuTableView.reloadData()
@@ -174,12 +162,16 @@ extension TakeOrderViewController{
     
     
     
+    
     func giveAllButtonRedColor (){
         foodBtn.backgroundColor = .red
         drinksBtn.backgroundColor = .red
         dessertsBtn.backgroundColor = .red
         kidsBtn.backgroundColor = .red
     }
+    
+    
+    
     
     
 }

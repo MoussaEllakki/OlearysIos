@@ -33,8 +33,17 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "tablesCell", for: indexPath) as! TablesCollectionViewCell
         
-       let imgForDelete = UIImage(named: "green")
-        cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
+        if (indexPath.row % 2  == 0){
+            
+            let imgForDelete = UIImage(named: "btnRed")
+            cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
+        }else{
+            
+            let imgForDelete = UIImage(named: "btnGreen")
+            cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
+        }
+      
+   
         return cell
      }
     

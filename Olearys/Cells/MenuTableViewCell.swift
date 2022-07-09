@@ -1,7 +1,7 @@
 
 import UIKit
 
-class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollectionViewDataSource{
+class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
     
     @IBOutlet weak var menuCollectionView: UICollectionView!
@@ -44,4 +44,13 @@ class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollecti
         
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: takeOrderViewController.view.frame.width * 0.33 , height: takeOrderViewController.view.frame.height * 0.080)
+    }
+    
+    
 }
+
+
+

@@ -1,7 +1,7 @@
 
 import UIKit
 
-class TablesViewController: UIViewController  , UICollectionViewDelegate , UICollectionViewDataSource {
+class TablesViewController: UIViewController  , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
    
  
 
@@ -64,6 +64,9 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width:self.view.frame.width * 0.2 , height: self.view.frame.height * 0.1)
+    }
     
     
 

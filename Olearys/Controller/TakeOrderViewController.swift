@@ -1,17 +1,23 @@
 
 import UIKit
 
-class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource , UITableViewDelegate , UITableViewDataSource{
+class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource , UITableViewDelegate , UITableViewDataSource , UICollectionViewDelegateFlowLayout {
     
+
+    @IBOutlet weak var tableSum: UIBarButtonItem!
     @IBOutlet weak var foodBtn: UIButton!
     @IBOutlet weak var drinksBtn: UIButton!
     @IBOutlet weak var dessertsBtn: UIButton!
     @IBOutlet weak var kidsBtn: UIButton!
     @IBOutlet weak var menuTableView: UITableView!
-    @IBOutlet weak var tableNumberLabel: UILabel!
-    @IBOutlet weak var tabletotalLabel: UILabel!
+ 
+    
     @IBOutlet weak var guestNumberLabel: UILabel!
     @IBOutlet weak var guestorderCollectionView: UICollectionView!
+    
+
+    var extraOrderTextView = UITextView()
+    var addExtraOrderButton = UIButton()
     
     let foodMenu = FoodMenus()
     let drinkMenu = DrinksMenus()
@@ -19,6 +25,7 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
     let kidsMenus = KidsMenus()
     var whichMenu = ShowMenu.foodMenus
     
+ 
     var tableNumber = ""
     let table = Table()
     let guest = Guest()
@@ -29,6 +36,8 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
         giveAllButtonRedColor()
         foodBtn.backgroundColor = .green
         table.number = tableNumber
+        tableSum.title = "Total: 0.0"
+      
     }
     
     
@@ -103,6 +112,9 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width:self.view.frame.width * 0.3 , height: self.view.frame.height * 0.1)
+    }
     
   
     func showGuestOrder (viewController : TakeOrderViewController , order : Type){
@@ -121,6 +133,47 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
         
     }
     
+    
+    @IBAction func extraOrderButton(_ sender: Any) {
+    
+        
+     
+        extraOrderTextView = UITextView(frame: CGRect(x: 0.0, y: 85.0, width: self.view.frame.width * 1, height: self.view.frame.height * 1))
+        
+        extraOrderTextView.backgroundColor = .white
+         self.view.addSubview(extraOrderTextView)
+        
+            
+            
+            addExtraOrderButton = UIButton(frame: CGRect(x: 100.0 , y: 450, width: self.view.frame.width - 200, height: 50))
+        addExtraOrderButton .backgroundColor = .red
+        addExtraOrderButton .setTitle("ok", for: .normal)
+        addExtraOrderButton .layer.cornerRadius = 10
+        addExtraOrderButton .addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+            self.view.addSubview(addExtraOrderButton)
+     
+           
+          
+            
+        }
+        
+  
+    
+        
+        @objc
+        func buttonAction(){
+          
+            extraOrderTextView.keyboardDismissMode
+            extraOrderTextView.text = ""
+            extraOrderTextView.isHidden = true
+            addExtraOrderButton .isHidden = true
+            
+        }
+        
+    
+    
+    
+ 
     
     
 }

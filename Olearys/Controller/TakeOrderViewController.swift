@@ -1,23 +1,18 @@
 
 import UIKit
 
-class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource , UITableViewDelegate , UITableViewDataSource , UICollectionViewDelegateFlowLayout {
+class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource , UITableViewDelegate , UITableViewDataSource , UICollectionViewDelegateFlowLayout , UITextFieldDelegate{
     
 
+ 
     @IBOutlet weak var tableSum: UIBarButtonItem!
     @IBOutlet weak var foodBtn: UIButton!
     @IBOutlet weak var drinksBtn: UIButton!
     @IBOutlet weak var dessertsBtn: UIButton!
     @IBOutlet weak var kidsBtn: UIButton!
     @IBOutlet weak var menuTableView: UITableView!
- 
-    
     @IBOutlet weak var guestNumberLabel: UILabel!
     @IBOutlet weak var guestorderCollectionView: UICollectionView!
-    
-
-    var extraOrderTextView = UITextView()
-    var addExtraOrderButton = UIButton()
     
     let foodMenu = FoodMenus()
     let drinkMenu = DrinksMenus()
@@ -25,7 +20,8 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
     let kidsMenus = KidsMenus()
     var whichMenu = ShowMenu.foodMenus
     
- 
+    var addittionOrderTextField : UITextField?
+    
     var tableNumber = ""
     let table = Table()
     let guest = Guest()
@@ -37,6 +33,7 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
         foodBtn.backgroundColor = .green
         table.number = tableNumber
         tableSum.title = "Total: 0.0"
+   
       
     }
     
@@ -125,6 +122,7 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
     }
     
     
+    
     @objc
     func deleteGuestOrder (sender : UIButton){
     
@@ -133,43 +131,10 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
         
     }
     
-    
-    @IBAction func extraOrderButton(_ sender: Any) {
-    
-        
-     
-        extraOrderTextView = UITextView(frame: CGRect(x: 0.0, y: 85.0, width: self.view.frame.width * 1, height: self.view.frame.height * 1))
-        
-        extraOrderTextView.backgroundColor = .white
-         self.view.addSubview(extraOrderTextView)
-        
-            
-            
-            addExtraOrderButton = UIButton(frame: CGRect(x: 100.0 , y: 450, width: self.view.frame.width - 200, height: 50))
-        addExtraOrderButton .backgroundColor = .red
-        addExtraOrderButton .setTitle("ok", for: .normal)
-        addExtraOrderButton .layer.cornerRadius = 10
-        addExtraOrderButton .addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-            self.view.addSubview(addExtraOrderButton)
-     
-           
-          
-            
-        }
-        
+      
   
     
-        
-        @objc
-        func buttonAction(){
-          
-            extraOrderTextView.keyboardDismissMode
-            extraOrderTextView.text = ""
-            extraOrderTextView.isHidden = true
-            addExtraOrderButton .isHidden = true
-            
-        }
-        
+       
     
     
     
@@ -177,6 +142,10 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
     
     
 }
+
+
+
+
 
 
 extension TakeOrderViewController{
@@ -225,6 +194,25 @@ extension TakeOrderViewController{
     
     
     
+    //____code for addition orders ----------------------------------------------------
     
+@IBAction func extraOrderButton(_ sender: Any) {
+       
+        addittionOrderTextField = UITextField(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+        addittionOrderTextField!.backgroundColor = .white
+        addittionOrderTextField!.returnKeyType = .done
+        addittionOrderTextField!.delegate = self
+         self.view.addSubview(addittionOrderTextField!)
+        
+          
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        tableSum.title  =    addittionOrderTextField!.text
+        addittionOrderTextField!.isHidden = true
+        view.endEditing(true)
+        return true
+    }
+    // ----------------------------------------------------------------------------
     
 }

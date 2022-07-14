@@ -4,7 +4,7 @@ import Foundation
 
 class Menu {
     
-    var Menutypes = [Type]()
-    var menueTittle = ""
+    var types = [Type]()
+    var tittle = ""
     
 }

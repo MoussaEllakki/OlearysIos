@@ -34,8 +34,16 @@ class TablesWithOrdes: UIViewController , UICollectionViewDataSource , UICollect
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "attGoraCell", for: indexPath) as! AttGoraCollectionViewCell
         
-       let imgForDelete = UIImage(named: "green")
-        cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
+        if (indexPath.row % 2 == 0){
+            let imgForDelete = UIImage(named: "imagegreen")
+            cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
+            
+        }else{
+            let imgForDelete = UIImage(named: "imagered")
+            cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
+        }
+      
+     
         return cell
      }
     
@@ -48,7 +56,11 @@ class TablesWithOrdes: UIViewController , UICollectionViewDataSource , UICollect
         
     }
     
-
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width:self.view.frame.width * 0.2 , height: self.view.frame.height * 0.1)
+    }
+    
+    
  
 
 }

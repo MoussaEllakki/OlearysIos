@@ -35,11 +35,11 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         
         if (indexPath.row % 2  == 0){
             
-            let imgForDelete = UIImage(named: "btnRed")
+            let imgForDelete = UIImage(named: "imagered")
             cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
         }else{
             
-            let imgForDelete = UIImage(named: "btnGreen")
+            let imgForDelete = UIImage(named: "imagegreen")
             cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
         }
       
@@ -60,7 +60,8 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         var takeOrderView = segue.destination as! TakeOrderViewController
-        takeOrderView.tableNumber =  String (sender as! Int)
+   
+        takeOrderView.table.number =  String (sender as! Int + 1)
         
     }
     

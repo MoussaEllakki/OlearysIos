@@ -33,8 +33,8 @@ class FoodMenus {
     let grilledChickenQuesadillas = Food(name: "GRILLED CHICKEN QUESADILLAS", price: 135.0)
     let oumphQuesadillasVagen = Food(name: "OUMPH QUESADILLAS (VEGAN)", price: 269)
     
-    self.snacknShareMenu.menueTittle = "Snack And Share"
-    self.snacknShareMenu.Menutypes = [hotbuffalowings5Pcs,hotbuffalowings10Pcs,hotbuffalowings15Pcs,
+    self.snacknShareMenu.tittle = "Snack And Share"
+    self.snacknShareMenu.types = [hotbuffalowings5Pcs,hotbuffalowings10Pcs,hotbuffalowings15Pcs,
                             parmesanGarlicWings5p,parmesanGarlicWings10p,parmesanGarlicWings15p,
                             olearysComboPlate,pannoumiCheesSticks,garlicCheeseBread,beefCheeseNachos,
                             nachos,grilledChickenQuesadillas,oumphQuesadillasVagen]
@@ -56,8 +56,8 @@ class FoodMenus {
     let mozzarellaSticks2p = Food(name: "MOZZARELLA STICKS 2P", price: 15.0)
     let bacon = Food(name: "BACON", price: 10.0)
         
-    self.burgersMenu.menueTittle = "Burger"
-    self.burgersMenu.Menutypes = [chilliCheeseBurger,baconBbqBurger,truffleOozingBurger,giantDoubleCheeseBurger,
+    self.burgersMenu.tittle = "Burger"
+    self.burgersMenu.types = [chilliCheeseBurger,baconBbqBurger,truffleOozingBurger,giantDoubleCheeseBurger,
                         cheedarCheeseBurger,crispyNachoBurger,texMexOumphburger,sweetPotatoFries,
                         cheesyFries,onionRings2p,jalapenoPoppers2p,mozzarellaSticks2p,bacon]
   //------------------------------------------------------------------------------------------
@@ -71,8 +71,8 @@ class FoodMenus {
     let truffleFlavouredMayo = Food(name: "TRUFFLE FLAVOURED MAYO", price:10.0)
     let chilleMayo = Food(name: "chilli MAYO", price: 10.0)
     
-    self.saucesMenu.menueTittle = "Sauses"
-    self.saucesMenu.Menutypes = [aioli,parmesanAndgarlic,hotCheedar,blueCheese,bearnaise,truffleFlavouredMayo,chilleMayo]
+    self.saucesMenu.tittle = "Sauses"
+    self.saucesMenu.types = [aioli,parmesanAndgarlic,hotCheedar,blueCheese,bearnaise,truffleFlavouredMayo,chilleMayo]
     //------------------------------------------------------------------------------------------
     
     // 4 MAINS  -> belogs to food menu
@@ -85,8 +85,8 @@ class FoodMenus {
     let creamypastaVegetarisk = Food(name: "CREAMY PASTA VEGETARISK ", price: 179.0)
     let oLearysMixedGrill = Food(name: "O’Learys Mixed Grill ", price: 305.0)
     
-    self.mainsMenu.menueTittle = "Main"
-    self.mainsMenu.Menutypes = [ryggBiff,oxFile,bourbonBqqRibs,fishNChips,creamypastaRäkor,creamypastaOxFile,
+    self.mainsMenu.tittle = "Main"
+    self.mainsMenu.types = [ryggBiff,oxFile,bourbonBqqRibs,fishNChips,creamypastaRäkor,creamypastaOxFile,
                  creamypastaVegetarisk,oLearysMixedGrill]
     //------------------------------------------------------------------------------------------
     

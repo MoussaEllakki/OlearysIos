@@ -19,23 +19,31 @@ class BuildRestaurant {
         for i in 1...tableQuantity{
             
             for i in 0..<tableQuantity{
-                
                let  tableNumberPlusOne = String(i + 1)
                let tableNumber = String(i)
-             
-                restaurant.child(Oneinstance().tables).child(tableNumber).setValue(tableNumberPlusOne)
-                
-              
+             restaurant.child(Oneinstance().tables).child(tableNumber).setValue(tableNumberPlusOne)
                 
             }
-        
         }
-    
-        
       
 }
     
-    
+    func buildTables2 (tableQuantity : Int) {
+      
+        let restaurant =   ref.child(Oneinstance().olearysEntre)
+        
+        for i in 1...tableQuantity{
+            
+            for i in 0..<tableQuantity{
+               let  tableNumberPlusOne = String(i + 1)
+               let tableNumber = String(i)
+             restaurant.child(Oneinstance().specialTables).child(tableNumber).setValue(tableNumberPlusOne)
+                
+            }
+        }
+      
+}
+
     
 
     

@@ -10,6 +10,7 @@ class Oneinstance {
     
     let olearysEntre = "OlearysEntre"
     let tables = "Tables"
+    let specialTables = "SpecialTables"
     
     
 }

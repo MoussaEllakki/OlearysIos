@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "olearysimg.png",
+      "filename" : "imagegreen.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "olearysimg-1.png",
+      "filename" : "imagegreen-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "olearysimg-2.png",
+      "filename" : "imagegreen-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

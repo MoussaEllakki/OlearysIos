@@ -4,6 +4,7 @@ import UIKit
 class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
     
+    @IBOutlet weak var typePricelabel: UILabel!
     @IBOutlet weak var menuCollectionView: UICollectionView!
     @IBOutlet weak var menuTittlelabel: UILabel!
     var takeOrderViewController = TakeOrderViewController()
@@ -39,8 +40,7 @@ class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollecti
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-      
-        takeOrderViewController.showGuestOrder( viewController : takeOrderViewController   , order: menu[indexPath.row])
+      takeOrderViewController.showGuestOrder( viewController : takeOrderViewController   , type: menu[indexPath.row])
         
     }
     
@@ -48,6 +48,12 @@ class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollecti
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: takeOrderViewController.view.frame.width * 0.33 , height: takeOrderViewController.view.frame.height * 0.080)
     }
+  
+    
+    
+    
+    
+    
     
     
 }

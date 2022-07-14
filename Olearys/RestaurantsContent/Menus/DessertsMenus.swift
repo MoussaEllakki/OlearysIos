@@ -24,8 +24,8 @@ class DessertsMenus {
          let strawberryMilkshake = Dessert(name: "STRAWBERRY MILKSHAKE", price:69.0 )
          let chocolateMilkshake = Dessert(name: "CHOCOLATE MILKSHAKE", price:69.0 )
        
-         self.dessertsMenu.menueTittle = "Desserts"
-         self.dessertsMenu.Menutypes = [chooclateBrowine,sweetLemonTiramisu,deepFiedBroWine,
+         self.dessertsMenu.tittle = "Desserts"
+         self.dessertsMenu.types = [chooclateBrowine,sweetLemonTiramisu,deepFiedBroWine,
             iceCreamSundae,cheeseCake,strawberryMilkshake,chocolateMilkshake]
         //------------------------------------------------------------------------------------------
         
@@ -42,8 +42,8 @@ class DessertsMenus {
         let cappucciono = Dessert(name: "CAPPUCCINO", price: 45.0)
         let coffeLatte  = Dessert(name: "CAFFE LATTE", price: 45.0)
         
-        self.coffeDrinksMenu.menueTittle = "Cooffe"
-        self.coffeDrinksMenu.Menutypes = [espressomartini,tullamore,gallianoMartini,jamaicanCoffe,coffe,tea,
+        self.coffeDrinksMenu.tittle = "Cooffe"
+        self.coffeDrinksMenu.types = [espressomartini,tullamore,gallianoMartini,jamaicanCoffe,coffe,tea,
                                           espressoSmall,espressoBig,cappucciono,coffeLatte]
         //------------------------------------------------------------------------------------------
         
@@ -67,8 +67,8 @@ class DessertsMenus {
         let baileys = Dessert(name: "BAILEYS", price: 88.0)
         let vaccariSambuca = Dessert(name: "VACCARI SAMBUCA", price: 94.0)
         
-        self.avecMenu.menueTittle = "Avec"
-        self.avecMenu.Menutypes = [braastadVs,boulardCalvados,makersMars,limoncelloVillaMassa,bacardiSpiced,
+        self.avecMenu.tittle = "Avec"
+        self.avecMenu.types = [braastadVs,boulardCalvados,makersMars,limoncelloVillaMassa,bacardiSpiced,
                         gentelmanJack,jackDaniels,jimBean,famousGrouse,highlandPark12,laphroaig10,theKraken,bacaradi8Anos,baileys,vaccariSambuca]
         
         self.allDessertsMenus = [dessertsMenu,coffeDrinksMenu,avecMenu]

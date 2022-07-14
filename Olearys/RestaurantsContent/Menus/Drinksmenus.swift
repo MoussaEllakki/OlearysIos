@@ -38,8 +38,8 @@ class DrinksMenus {
         let jackDanielsHoney = Drink(name: "JACK DANIELS HONEY", price: 100.0)
         
         
-        self.coktailsmenu.menueTittle = "Coktail"
-        self.coktailsmenu.Menutypes = [aperolSpritz,vodkaRedBull,classicMargareta,classicMintMojito
+        self.coktailsmenu.tittle = "Coktail"
+        self.coktailsmenu.types = [aperolSpritz,vodkaRedBull,classicMargareta,classicMintMojito
             ,heroGinFentimansTonic,ginAndTonic,fishShot,sourFiskCola,gammelDansk,fernetBranca,
             jimBeamHighBall,jackAndCola,passionFruitCobbler,negroni,espressoMartini,strawberryLemonMocktail,
             brancaMenta,bacardiRazz,sourFiskIcePear,jackDanielsHoney]
@@ -76,8 +76,8 @@ class DrinksMenus {
         let carlsBergEko = Drink(name: "CARLSBERG EKO", price: 39.0)
         
         
-        self.beerMenu.menueTittle = "Beer"
-        self.beerMenu.Menutypes = [brooklynLager40cl,brooklynLager50cl,carlsbergHof40cl,carlsbergHof50cl,staropramen40cl,staropramen50,
+        self.beerMenu.tittle = "Beer"
+        self.beerMenu.types = [brooklynLager40cl,brooklynLager50cl,carlsbergHof40cl,carlsbergHof50cl,staropramen40cl,staropramen50,
         carlsbergExport40cl,carlsbergExport50cl,brooklynDefenderIpa40cl,brooklynDefenderIpa50cl,guinnesDraught,
         samuelAdamBostonLager,eriksbergLager,eriksbergKaraktarBarnStenlager,coronaExtra,blancWitbier1664,
         erdingerHefeWeissbier,grimbergenblondeAle,brooklynEipa,lagunitas,brooklynBelAir,ncbBreWery,brooklynSpecialEffects,
@@ -99,8 +99,8 @@ class DrinksMenus {
         let redBull  = Drink(name: "RED BULL", price: 49.0)
         let redBullSugarFree = Drink(name: "RED BULL SUGARFREE", price: 49.0)
         
-        self.ciderAndSodaMenue.menueTittle = "Cider & Soda"
-        self.ciderAndSodaMenue.Menutypes =  [boulardCiderEko,somersbySweetCider,somersbyCider,pepsimax,pepsi,
+        self.ciderAndSodaMenue.tittle = "Cider & Soda"
+        self.ciderAndSodaMenue.types =  [boulardCiderEko,somersbySweetCider,somersbyCider,pepsimax,pepsi,
                                    zingo,sevenUp,ramlosa,redBull,redBullSugarFree]
         
         //-------------------------------------------------------------------------------------------------------
@@ -157,8 +157,8 @@ class DrinksMenus {
         
  
            
-        self.wineMenu.menueTittle = "Wine"
-        self.wineMenu.Menutypes = [champangeBrutMajeurAyalaGlas,champangeBrutMajeurAyalaFlaska,cavaJuameSeeraEkoGlas,cavaJuameSeeraEkoFlaska,
+        self.wineMenu.tittle = "Wine"
+        self.wineMenu.types = [champangeBrutMajeurAyalaGlas,champangeBrutMajeurAyalaFlaska,cavaJuameSeeraEkoGlas,cavaJuameSeeraEkoFlaska,
             proseccoAbbaziaExtraDryGlas,proseccoAbbaziaExtraDryFlaska,vintenseSparklingAlcoholFreeGlas,vintenseSparklingAlcoholFreeFlaska,loCaTourCreamyChardonnayGlas,loCaTourCreamyChardonnayFlaska,turckheimPinotBlancEkoGlas,turckheimPinotBlancEkoFlaska,settesoliGrilloEkoGlas,settesoliRoseEkoFlaska,vintenseChardonnayAlcoholFreeGlas,vintenseChardonnayAlcoholFreeFlaska,mariuspeyolCotesDeprovenceRoseGlas,
             mariuspeyolCotesDeprovenceRoseFlaska,settesoliRoseEkoGlas,settesoliRoseEkoFlaska,loCaTourZinfandelGlas,loCaTourZinfandelFlaska,poggioAlCasoneChiantiSuperioreGlas,poggioAlCasoneChiantiSuperioreFlaska,
             faustinoViiRiojaGlas,faustinoViiRiojaFlaska,paulJabouletCotesDuParalleleGlas,paulJabouletCotesDuParalleleFlaska,

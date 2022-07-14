@@ -31,12 +31,7 @@ class MainViewController: UIViewController {
     }
     
     
-    @IBAction func loggaUt_button(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-       
-        
-    }
-    
+ 
     
     
     

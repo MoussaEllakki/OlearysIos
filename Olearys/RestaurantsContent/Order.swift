@@ -4,7 +4,7 @@ import Foundation
 
 class Order {
    
-    var wholeOrder : [Type] = []
+    var  types : [Type] = []
     
     
     

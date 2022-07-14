@@ -16,8 +16,8 @@ class KidsMenus {
         let chickenNuggets = Dessert(name: "CHICKEN NUGGETS", price: 69.0 )
         let quesadilla = Dessert(name: "quesadilla", price: 69.0 )
         
-        self.kidsFoodMenu.menueTittle = "Kids Menu"
-        self.kidsFoodMenu.Menutypes = [cheesBurger,fishAndChips,chickenNuggets,quesadilla]
+        self.kidsFoodMenu.tittle = "Kids Menu"
+        self.kidsFoodMenu.types = [cheesBurger,fishAndChips,chickenNuggets,quesadilla]
         
         //---------------------------------------------------------------------------------
         // Kids Desserts
@@ -25,12 +25,11 @@ class KidsMenus {
         let sundae = Dessert(name: "SUNDAE", price: 29.9)
         let pancakes = Dessert(name: "PANCAKES", price: 29.0 )
         
-        self.kidsDessertsMenu.menueTittle = "Kids Desserts"
-        self.kidsDessertsMenu.Menutypes = [brownie,sundae, pancakes]
+        self.kidsDessertsMenu.tittle = "Kids Desserts"
+        self.kidsDessertsMenu.types = [brownie,sundae, pancakes]
         
         self.kidsMenu = [kidsFoodMenu,kidsDessertsMenu]
         
     }
-    
     
 }

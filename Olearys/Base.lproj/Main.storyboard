@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="taF-qp-wSl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="taF-qp-wSl">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -78,12 +79,16 @@
                             <constraint firstItem="Nm2-a8-JnJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="GuT-Qy-0si"/>
                             <constraint firstItem="En9-Sw-Fu6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Hil-XH-7rE"/>
                             <constraint firstAttribute="trailing" secondItem="YcO-28-hRT" secondAttribute="trailing" id="PJ6-0b-LDa"/>
+                            <constraint firstAttribute="bottom" secondItem="YcO-28-hRT" secondAttribute="bottom" id="QNl-qc-2uR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nm2-a8-JnJ" secondAttribute="trailing" constant="94.670000000000002" id="QdZ-Le-iID"/>
+                            <constraint firstItem="YcO-28-hRT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V6S-fB-yRo"/>
+                            <constraint firstItem="YcO-28-hRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V70-m0-sg7"/>
                             <constraint firstItem="D4q-jC-BuC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="XRA-wx-QLe"/>
                             <constraint firstItem="En9-Sw-Fu6" firstAttribute="top" secondItem="Nm2-a8-JnJ" secondAttribute="bottom" constant="15" id="fqd-7m-2cI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D4q-jC-BuC" secondAttribute="trailing" constant="114" id="hdy-5B-1bB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="En9-Sw-Fu6" secondAttribute="trailing" constant="70" id="iSn-hH-9Mi"/>
                             <constraint firstAttribute="bottom" secondItem="YcO-28-hRT" secondAttribute="bottom" id="qw5-AS-WdR"/>
+                            <constraint firstItem="YcO-28-hRT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sg5-PF-z8A"/>
                             <constraint firstItem="YcO-28-hRT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tkW-MG-5IM"/>
                         </constraints>
                     </view>
@@ -386,14 +391,14 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <prototypes>
                                                         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" id="7Zh-e0-gaC" customClass="FoodTableViewCell" customModule="Olearys" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="44.666666030883789" width="187" height="31.333333969116211"/>
+                                                            <rect key="frame" x="0.0" y="50" width="187" height="35"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Zh-e0-gaC" id="mfJ-hF-aVS">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="31.333333969116211"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="35"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0c6-2U-NIb">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="31.333333333333332"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="35"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                                         <connections>
@@ -587,111 +592,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebf-wi-N3Q">
-                                <rect key="frame" x="41.666666666666657" y="758.66666666666663" width="306.66666666666674" height="46.333333333333371"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ml0-ak-072">
-                                        <rect key="frame" x="10" y="7.6666666666667425" width="65.666666666666671" height="31"/>
-                                        <color key="backgroundColor" red="0.1803921568627451" green="0.60784313725490191" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Food"/>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="foodButton:" destination="n68-H3-FIs" eventType="touchUpInside" id="JH0-VL-rOW"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRB-GR-Ha3">
-                                        <rect key="frame" x="85.666666666666657" y="7.6666666666667425" width="65.666666666666657" height="31"/>
-                                        <color key="backgroundColor" red="0.18039215689999999" green="0.60784313729999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Drinks"/>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="drinksButton:" destination="n68-H3-FIs" eventType="touchUpInside" id="jvj-RX-oWj"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PK-mS-oQn">
-                                        <rect key="frame" x="239.00000000000003" y="7.6666666666667425" width="65.666666666666657" height="31"/>
-                                        <color key="backgroundColor" red="0.18039215689999999" green="0.60784313729999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Kids"/>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="kidsbutton:" destination="n68-H3-FIs" eventType="touchUpInside" id="ezT-AG-Iq3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7q-Ne-n8G">
-                                        <rect key="frame" x="163.33333333333334" y="7.6666666666667425" width="65.666666666666657" height="31"/>
-                                        <color key="backgroundColor" red="0.18039215689999999" green="0.60784313729999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Dessert">
-                                                    <attributes>
-                                                        <font key="NSFont" size="12" name="Helvetica"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="dessertsButton:" destination="n68-H3-FIs" eventType="touchUpInside" id="JhJ-CX-nr4"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstItem="cRB-GR-Ha3" firstAttribute="centerY" secondItem="Ebf-wi-N3Q" secondAttribute="centerY" id="0S7-qb-1OY"/>
-                                    <constraint firstItem="2PK-mS-oQn" firstAttribute="width" secondItem="Ebf-wi-N3Q" secondAttribute="width" multiplier="0.214286" id="6h6-ua-Ptg"/>
-                                    <constraint firstItem="cRB-GR-Ha3" firstAttribute="height" secondItem="Ebf-wi-N3Q" secondAttribute="height" multiplier="0.666667" id="A4h-0j-gwt"/>
-                                    <constraint firstItem="d7q-Ne-n8G" firstAttribute="centerY" secondItem="Ebf-wi-N3Q" secondAttribute="centerY" id="KnU-MQ-qJe"/>
-                                    <constraint firstItem="ml0-ak-072" firstAttribute="leading" secondItem="Ebf-wi-N3Q" secondAttribute="leading" constant="10" id="NWE-hh-Eez"/>
-                                    <constraint firstItem="cRB-GR-Ha3" firstAttribute="leading" secondItem="ml0-ak-072" secondAttribute="trailing" constant="10" id="ZBl-1J-V7e"/>
-                                    <constraint firstItem="ml0-ak-072" firstAttribute="width" secondItem="Ebf-wi-N3Q" secondAttribute="width" multiplier="0.214286" id="aP5-yf-KlP"/>
-                                    <constraint firstItem="ml0-ak-072" firstAttribute="centerY" secondItem="Ebf-wi-N3Q" secondAttribute="centerY" id="ckz-O8-RCJ"/>
-                                    <constraint firstItem="d7q-Ne-n8G" firstAttribute="leading" secondItem="cRB-GR-Ha3" secondAttribute="trailing" constant="12" id="ffO-lu-IHI"/>
-                                    <constraint firstItem="2PK-mS-oQn" firstAttribute="height" secondItem="Ebf-wi-N3Q" secondAttribute="height" multiplier="0.666667" id="jVo-pH-20s"/>
-                                    <constraint firstItem="cRB-GR-Ha3" firstAttribute="width" secondItem="Ebf-wi-N3Q" secondAttribute="width" multiplier="0.214286" id="mMk-tE-w5b"/>
-                                    <constraint firstItem="ml0-ak-072" firstAttribute="height" secondItem="Ebf-wi-N3Q" secondAttribute="height" multiplier="0.666667" id="oR2-7E-WE3"/>
-                                    <constraint firstItem="d7q-Ne-n8G" firstAttribute="height" secondItem="Ebf-wi-N3Q" secondAttribute="height" multiplier="0.666667" id="rtp-Gj-xDq"/>
-                                    <constraint firstItem="2PK-mS-oQn" firstAttribute="centerY" secondItem="Ebf-wi-N3Q" secondAttribute="centerY" id="uvA-jn-X8a"/>
-                                    <constraint firstItem="d7q-Ne-n8G" firstAttribute="width" secondItem="Ebf-wi-N3Q" secondAttribute="width" multiplier="0.214286" id="vys-S3-Ysp"/>
-                                    <constraint firstItem="2PK-mS-oQn" firstAttribute="leading" secondItem="d7q-Ne-n8G" secondAttribute="trailing" constant="10" id="zov-6f-HBN"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gäst " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaS-eH-O8p">
                                 <rect key="frame" x="5" y="93" width="216" height="30"/>
                                 <constraints>
@@ -765,18 +665,18 @@
                                 </connections>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="323" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YuW-Cd-zs9">
-                                <rect key="frame" x="0.0" y="273" width="390" height="485.66666666666674"/>
+                                <rect key="frame" x="5" y="268" width="380" height="492"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuCell" rowHeight="450" id="aoH-bd-zh7" customClass="MenuTableViewCell" customModule="Olearys" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="450"/>
+                                        <rect key="frame" x="0.0" y="50" width="380" height="450"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aoH-bd-zh7" id="uDk-6h-WsV">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="450"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="450"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-fk-WHQ">
-                                                    <rect key="frame" x="20" y="21" width="350" height="30"/>
+                                                    <rect key="frame" x="20" y="21" width="340" height="30"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="vv7-Za-UGv"/>
@@ -785,7 +685,7 @@
                                                     <nil key="textColor"/>
                                                 </label>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FXJ-J1-IUP">
-                                                    <rect key="frame" x="5" y="56" width="380" height="394"/>
+                                                    <rect key="frame" x="5" y="56" width="370" height="394"/>
                                                     <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NOk-DS-sgq">
                                                         <size key="itemSize" width="107" height="65"/>
@@ -856,7 +756,12 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Nästa"/>
+                                        <fragment content="Nästa">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="12" name="Helvetica-BoldOblique"/>
+                                            </attributes>
+                                        </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -894,7 +799,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Edit">
                                             <attributes>
-                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <font key="NSFont" size="12" name="Helvetica-BoldOblique"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -916,7 +821,11 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Nästa"/>
+                                        <fragment content="Nästa">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica-BoldOblique"/>
+                                            </attributes>
+                                        </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -937,7 +846,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Skicka">
                                             <attributes>
-                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <font key="NSFont" size="12" name="Helvetica-BoldOblique"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -952,31 +861,157 @@
                                     <action selector="buttonSendOrder:" destination="n68-H3-FIs" eventType="touchUpInside" id="AMU-9q-HFy"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebf-wi-N3Q">
+                                <rect key="frame" x="7.6666666666666572" y="765" width="375" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ml0-ak-072">
+                                        <rect key="frame" x="9" y="5" width="82" height="30"/>
+                                        <color key="backgroundColor" red="0.1803921568627451" green="0.60784313725490191" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Food">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="Helvetica-BoldOblique"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="foodButton:" destination="n68-H3-FIs" eventType="touchUpInside" id="JH0-VL-rOW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRB-GR-Ha3">
+                                        <rect key="frame" x="100" y="5" width="82" height="30"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.60784313729999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Drinks">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="Helvetica-BoldOblique"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="drinksButton:" destination="n68-H3-FIs" eventType="touchUpInside" id="jvj-RX-oWj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PK-mS-oQn">
+                                        <rect key="frame" x="283" y="5" width="82" height="30"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.60784313729999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Kids">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="14" name="Helvetica-BoldOblique"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="kidsbutton:" destination="n68-H3-FIs" eventType="touchUpInside" id="ezT-AG-Iq3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7q-Ne-n8G">
+                                        <rect key="frame" x="191" y="5" width="83" height="30"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.60784313729999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Dessert">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="14" name="Helvetica-BoldOblique"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="dessertsButton:" destination="n68-H3-FIs" eventType="touchUpInside" id="JhJ-CX-nr4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstItem="d7q-Ne-n8G" firstAttribute="width" secondItem="Ebf-wi-N3Q" secondAttribute="width" multiplier="0.221333" id="1BX-wu-Cwb"/>
+                                    <constraint firstItem="cRB-GR-Ha3" firstAttribute="width" secondItem="Ebf-wi-N3Q" secondAttribute="width" multiplier="0.218667" id="2lJ-Ji-OpL"/>
+                                    <constraint firstItem="cRB-GR-Ha3" firstAttribute="centerY" secondItem="Ebf-wi-N3Q" secondAttribute="centerY" id="3dy-x5-6bi"/>
+                                    <constraint firstItem="d7q-Ne-n8G" firstAttribute="centerY" secondItem="Ebf-wi-N3Q" secondAttribute="centerY" id="DmZ-t7-6eT"/>
+                                    <constraint firstItem="ml0-ak-072" firstAttribute="centerY" secondItem="Ebf-wi-N3Q" secondAttribute="centerY" id="JOb-7R-DTj"/>
+                                    <constraint firstItem="2PK-mS-oQn" firstAttribute="width" secondItem="Ebf-wi-N3Q" secondAttribute="width" multiplier="0.218667" id="Kmb-fQ-3fp"/>
+                                    <constraint firstItem="cRB-GR-Ha3" firstAttribute="leading" secondItem="ml0-ak-072" secondAttribute="trailing" constant="9" id="NXm-mw-6du"/>
+                                    <constraint firstItem="ml0-ak-072" firstAttribute="leading" secondItem="Ebf-wi-N3Q" secondAttribute="leading" constant="9" id="OqN-M8-uZH"/>
+                                    <constraint firstItem="2PK-mS-oQn" firstAttribute="centerY" secondItem="Ebf-wi-N3Q" secondAttribute="centerY" id="Tuk-rH-9FA"/>
+                                    <constraint firstItem="2PK-mS-oQn" firstAttribute="leading" secondItem="d7q-Ne-n8G" secondAttribute="trailing" constant="9" id="Uyb-S1-lq2"/>
+                                    <constraint firstItem="d7q-Ne-n8G" firstAttribute="centerY" secondItem="Ebf-wi-N3Q" secondAttribute="centerY" id="d3C-6i-dm4"/>
+                                    <constraint firstItem="ml0-ak-072" firstAttribute="width" secondItem="Ebf-wi-N3Q" secondAttribute="width" multiplier="0.218667" id="esT-WX-5ap"/>
+                                    <constraint firstItem="2PK-mS-oQn" firstAttribute="height" secondItem="Ebf-wi-N3Q" secondAttribute="height" multiplier="0.75" id="iC3-2o-04f"/>
+                                    <constraint firstItem="ml0-ak-072" firstAttribute="height" secondItem="Ebf-wi-N3Q" secondAttribute="height" multiplier="0.75" id="nWk-rh-2Zh"/>
+                                    <constraint firstItem="cRB-GR-Ha3" firstAttribute="height" secondItem="Ebf-wi-N3Q" secondAttribute="height" multiplier="0.75" id="oN8-8h-5lZ"/>
+                                    <constraint firstItem="d7q-Ne-n8G" firstAttribute="leading" secondItem="cRB-GR-Ha3" secondAttribute="trailing" constant="9" id="oSc-BL-bYO"/>
+                                    <constraint firstItem="d7q-Ne-n8G" firstAttribute="height" secondItem="Ebf-wi-N3Q" secondAttribute="height" multiplier="0.75" id="u5J-dr-hJ9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ho1-62-eR8"/>
                         <color key="backgroundColor" red="0.1803921568627451" green="0.60784313725490191" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ho1-62-eR8" firstAttribute="bottom" secondItem="Ebf-wi-N3Q" secondAttribute="bottom" constant="5" id="1Pw-42-jis"/>
+                            <constraint firstItem="Ho1-62-eR8" firstAttribute="bottom" secondItem="Ebf-wi-N3Q" secondAttribute="bottom" constant="5" id="1xN-Ya-yn8"/>
+                            <constraint firstItem="Ebf-wi-N3Q" firstAttribute="width" secondItem="Bzc-gS-gmm" secondAttribute="width" multiplier="0.961538" id="2Dx-kM-lJC"/>
                             <constraint firstItem="TaS-eH-O8p" firstAttribute="leading" secondItem="Ho1-62-eR8" secondAttribute="leading" constant="5" id="48c-wq-Otw"/>
-                            <constraint firstItem="YuW-Cd-zs9" firstAttribute="top" secondItem="THy-Fo-Yg2" secondAttribute="bottom" constant="10" id="50P-2Z-EH9"/>
+                            <constraint firstItem="Ebf-wi-N3Q" firstAttribute="top" secondItem="YuW-Cd-zs9" secondAttribute="bottom" constant="5" id="50d-ir-G7m"/>
                             <constraint firstItem="Edu-rq-lx0" firstAttribute="top" secondItem="gXf-1g-ovr" secondAttribute="bottom" constant="5" id="AAD-6J-hK3"/>
+                            <constraint firstItem="Ho1-62-eR8" firstAttribute="trailing" secondItem="YuW-Cd-zs9" secondAttribute="trailing" constant="5" id="AqE-zQ-2PD"/>
+                            <constraint firstItem="Ho1-62-eR8" firstAttribute="trailing" secondItem="YuW-Cd-zs9" secondAttribute="trailing" constant="5" id="HI8-pf-ULM"/>
+                            <constraint firstItem="YuW-Cd-zs9" firstAttribute="leading" secondItem="Ho1-62-eR8" secondAttribute="leading" constant="5" id="Kaz-ZU-FEh"/>
                             <constraint firstItem="wog-lB-JkN" firstAttribute="top" secondItem="gXf-1g-ovr" secondAttribute="bottom" constant="5" id="L4M-FY-naH"/>
                             <constraint firstItem="Edu-rq-lx0" firstAttribute="leading" secondItem="wog-lB-JkN" secondAttribute="trailing" constant="5" id="LId-dC-3gm"/>
                             <constraint firstItem="Ho1-62-eR8" firstAttribute="trailing" secondItem="uvw-yr-ash" secondAttribute="trailing" constant="5" id="RNp-E4-jpY"/>
-                            <constraint firstItem="Ebf-wi-N3Q" firstAttribute="top" secondItem="YuW-Cd-zs9" secondAttribute="bottom" id="VH5-VY-1Lg"/>
-                            <constraint firstItem="YuW-Cd-zs9" firstAttribute="leading" secondItem="Ho1-62-eR8" secondAttribute="leading" id="Wcp-wt-WDi"/>
+                            <constraint firstItem="YuW-Cd-zs9" firstAttribute="top" secondItem="THy-Fo-Yg2" secondAttribute="bottom" constant="5" id="U15-oh-NIW"/>
+                            <constraint firstItem="Ebf-wi-N3Q" firstAttribute="centerX" secondItem="Ho1-62-eR8" secondAttribute="centerX" id="WDi-Q6-MfO"/>
                             <constraint firstItem="THy-Fo-Yg2" firstAttribute="top" secondItem="gXf-1g-ovr" secondAttribute="bottom" constant="5" id="bTI-Sj-IVv"/>
-                            <constraint firstItem="Ebf-wi-N3Q" firstAttribute="centerX" secondItem="Ho1-62-eR8" secondAttribute="centerX" id="bso-GD-Fe1"/>
                             <constraint firstItem="THy-Fo-Yg2" firstAttribute="leading" secondItem="Ho1-62-eR8" secondAttribute="leading" constant="5" id="gGI-wb-Rt2"/>
-                            <constraint firstItem="YuW-Cd-zs9" firstAttribute="trailing" secondItem="Ho1-62-eR8" secondAttribute="trailing" id="ieP-Gx-NlH"/>
                             <constraint firstItem="uvw-yr-ash" firstAttribute="top" secondItem="gXf-1g-ovr" secondAttribute="bottom" constant="5" id="l5B-t4-a86"/>
+                            <constraint firstItem="Ebf-wi-N3Q" firstAttribute="height" secondItem="Bzc-gS-gmm" secondAttribute="height" multiplier="0.0473934" id="lFc-el-cic"/>
                             <constraint firstItem="Ho1-62-eR8" firstAttribute="trailing" secondItem="MtM-WI-jCo" secondAttribute="trailing" constant="5" id="lKk-7e-Vlj"/>
+                            <constraint firstItem="YuW-Cd-zs9" firstAttribute="top" secondItem="THy-Fo-Yg2" secondAttribute="bottom" constant="5" id="pOe-cD-rpC"/>
                             <constraint firstItem="gXf-1g-ovr" firstAttribute="top" secondItem="TaS-eH-O8p" secondAttribute="bottom" constant="5" id="qui-Eb-PzE"/>
                             <constraint firstItem="Ho1-62-eR8" firstAttribute="trailing" secondItem="gXf-1g-ovr" secondAttribute="trailing" constant="5" id="rSA-wL-Q7s"/>
                             <constraint firstItem="wog-lB-JkN" firstAttribute="leading" secondItem="THy-Fo-Yg2" secondAttribute="trailing" constant="5" id="u0o-8i-GQc"/>
                             <constraint firstItem="gXf-1g-ovr" firstAttribute="leading" secondItem="Ho1-62-eR8" secondAttribute="leading" constant="5" id="vdI-2h-pNK"/>
                             <constraint firstItem="TaS-eH-O8p" firstAttribute="top" secondItem="Ho1-62-eR8" secondAttribute="top" constant="5" id="weS-dw-Ux1"/>
                             <constraint firstItem="MtM-WI-jCo" firstAttribute="top" secondItem="Ho1-62-eR8" secondAttribute="top" id="xDF-nz-AeH"/>
+                            <constraint firstItem="YuW-Cd-zs9" firstAttribute="leading" secondItem="Ho1-62-eR8" secondAttribute="leading" constant="5" id="yjQ-nv-yNG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="F40-su-cG2">
@@ -1000,7 +1035,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4B-aB-OQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2178" y="-803"/>
+            <point key="canvasLocation" x="2086.1538461538462" y="-1108.2938388625591"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sVl-tf-P8i">
@@ -1024,7 +1059,7 @@
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="appImage" width="155" height="309.33334350585938"/>
-        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

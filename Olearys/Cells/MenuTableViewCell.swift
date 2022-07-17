@@ -40,9 +40,13 @@ class MenuTableViewCell: UITableViewCell , UICollectionViewDelegate , UICollecti
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        
+     
       takeOrderViewController.showGuestOrder( viewController : takeOrderViewController   , type: menu[indexPath.row])
         
     }
+    
+   
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

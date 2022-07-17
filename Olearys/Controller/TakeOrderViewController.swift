@@ -22,7 +22,7 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
     var whichMenu = ShowMenu.foodMenus
     var messageForuser = MessageForUser()
     var addittionOrderTextField : UITextField?
-    
+    var setDataInFireBase = SetDataInFireBase()
  
     let table = Table()
     var guest = Guest(number: "1")
@@ -36,9 +36,8 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
         tableSum.title = "Totalt: \(table.sum)"
         self.title = "Bord \(table.number)"
         table.guests.append(guest)
-        guestNumberLabel.text = "Guest \(table.guests.count) sum: \(guest.sum)"
+        guestNumberLabel.text = "Gäst \(table.guests.count) sum: \(guest.sum)"
         cancelOrderButton.title = "Avbryt"
-       
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = cancelOrderButton
         
    }
@@ -116,7 +115,7 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
   
     func showGuestOrder (viewController : TakeOrderViewController , type : Type){
         guest.makeOrder(type: type)
-        guestNumberLabel.text = "Guest \(table.guests.count) sum: \(guest.sum)"
+        guestNumberLabel.text = "Guest \(guest.number) sum: \(guest.sum)"
         updateTableInformation()
         viewController.guestorderCollectionView.reloadData()
     }
@@ -138,7 +137,8 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
             messageForuser.sendMessage(controller: self, msg: messageForuser.guestDosentOrdered)
         }else{
             
-            let nextGuestNumber = String (table.guests.count)
+            print(table.guests.count)
+            let nextGuestNumber = String (table.guests.count + 1)
             let newGuest = Guest(number: nextGuestNumber)
             guest = newGuest
             table.guests.append(guest)
@@ -157,7 +157,7 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
         if (table.sum == 0.0){
             messageForuser.sendMessage(controller:self, msg: messageForuser.tableHaseNoOrder)
         }else{
-            messageForuser.confirmeMessage(controller: self, msg: messageForuser.confirmSendingOrder)
+           confirmeMessage()
             
         }
         
@@ -165,7 +165,7 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
     
     
     func updateGuestInformation(){
-        guestNumberLabel.text = "Guest \(table.guests.count) sum: \(guest.sum)"
+        guestNumberLabel.text = "Guest \(guest.number) sum: \(guest.sum)"
         guestorderCollectionView.reloadData()
     }
     
@@ -238,19 +238,48 @@ extension TakeOrderViewController {
         addittionOrderTextField!.backgroundColor = .white
         addittionOrderTextField!.returnKeyType = .done
         addittionOrderTextField!.delegate = self
-   
-         self.view.addSubview(addittionOrderTextField!)
+       self.navigationItem.hidesBackButton = true
+        addittionOrderTextField?.placeholder = "Gäst \(guest.number) önskemål"
+        self.view.addSubview(addittionOrderTextField!)
         
           
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        tableSum.title  =    addittionOrderTextField!.text
+        guest.specialOrder = addittionOrderTextField!.text!
         addittionOrderTextField!.isHidden = true
+        self.navigationItem.hidesBackButton = false
         view.endEditing(true)
         return true
     }
     // ----------------------------------------------------------------------------
+    
+    
+    
+    func confirmeMessage (){
+        
+        var dialogMessage = UIAlertController(title: "Bekräfta", message: "Är du säker du vill skicka order till Köket ?", preferredStyle: .actionSheet)
+        let jaKnapp = UIAlertAction(title: "Ja", style: .destructive, handler: { [self] (action) -> Void in
+            
+           
+            self.navigationController?.popViewController(animated: true)
+            
+        })
+        
+        let nejKnapp = UIAlertAction(title: "Nej", style: .default, handler: { (action) -> Void in
+            
+            
+        })
+        
+        dialogMessage.addAction(nejKnapp)
+        dialogMessage.addAction(jaKnapp)
+        self.present(dialogMessage, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    
     
 }
 

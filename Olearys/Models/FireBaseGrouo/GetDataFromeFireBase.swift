@@ -20,10 +20,7 @@ class GetDataFromeFireBase {
     
     
     
-    
-    
-    
-    
+
     func getTables ( completionHand: @escaping () -> ()){
         print("two")
         self.tables.removeAll()
@@ -36,6 +33,7 @@ class GetDataFromeFireBase {
             }
             
             for   data in snapshot.children {
+                
                 let  dataSnapshot =  data as! DataSnapshot
                 let  tableAsDectionary = dataSnapshot.value as! String
                 print("four")

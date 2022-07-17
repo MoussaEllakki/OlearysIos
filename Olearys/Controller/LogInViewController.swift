@@ -15,7 +15,7 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         
       // buildRestaurant.buildTables(tableQuantity: 20)
-     // buildRestaurant.buildTables2(tableQuantity: 5)
+     //  buildRestaurant.buildTables2(tableQuantity: 5)
         
     }
     

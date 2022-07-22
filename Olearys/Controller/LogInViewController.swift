@@ -9,7 +9,7 @@ class LogInViewController: UIViewController {
     
     let buildRestaurant = BuildRestaurant()
     let messageForUser = MessageForUser()
-    let restaurantId = "0"
+    let access = Access()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +24,8 @@ class LogInViewController: UIViewController {
         if (restaurantIDTextField.text!.isEmpty) {
             messageForUser.sendMessage(controller: self, msg: messageForUser.emptyTextFieldText)
         }
-        if (restaurantIDTextField.text != restaurantId){
-            messageForUser.sendMessage(controller: self, msg: messageForUser.wrongIdText)
-        }
+        
+        controllAccess(input: restaurantIDTextField.text!)
         
     }
     
@@ -41,14 +40,35 @@ extension LogInViewController {
         view.endEditing(true)
         
     }
+    
+    
+    func controllAccess(input : String){
+        
+        if (input == access.alexK || input == access.saraK || input == access.kithen){
+            
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "TableWithOrder") as! TablesWithOrdes
+          
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }else if (input == access.davidW || input == access.dinaW || input == access.waiter){
+            
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "MinView") as! MainViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+          
+        }else{
+            
+            messageForUser.sendMessage(controller: self, msg: messageForUser.noAccess)
+            
+        }
+    
+    }
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
 
 
 

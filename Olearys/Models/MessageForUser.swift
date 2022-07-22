@@ -7,7 +7,7 @@ class MessageForUser  {
     
     
     let emptyTextFieldText = "Skriv restaurang id först"
-    let wrongIdText = "Fel ID"
+    let noAccess = "Du har ej access"
     let guestDosentOrdered = "Nuvarande gäst har inte beställt något"
     let tableHaseNoOrder = "Det finns ingen order att skicka"
    

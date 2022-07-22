@@ -1,9 +1,4 @@
-//
-//  GetDataFromeFireBase.swift
-//  Olearys
-//
-//  Created by Moussa El Lakki on 2022-06-27.
-//
+
 
 import Foundation
 import Firebase
@@ -11,7 +6,7 @@ import Firebase
 class GetDataFromeFireBase {
     
     var ref :  DatabaseReference!
-    var tables : [String] = []
+    var tables : [Table] = []
     
     init(){
         ref = Database.database().reference()
@@ -25,21 +20,23 @@ class GetDataFromeFireBase {
         print("two")
         self.tables.removeAll()
         
-        ref.child(Oneinstance().olearysEntre).child(Oneinstance().tables).getData(completion:  { [self] error, snapshot in
+        ref.child(FBChild().olearysEntre).child(FBChild().tables).getData(completion:  { [self] error, snapshot in
             guard error == nil else {
                 print(error!.localizedDescription)
                 print("fellllll")
                 return;
             }
             
-            for   data in snapshot.children {
+            for   dataAsoneSnapShot in snapshot.children {
                 
-                let  dataSnapshot =  data as! DataSnapshot
-                let  tableAsDectionary = dataSnapshot.value as! String
+                let  oneSnapshot =  dataAsoneSnapShot as! DataSnapshot
+                let  tableAsDectionary = oneSnapshot.value as! [String : AnyObject]
+                
+                let table = Table()
+                table.number = tableAsDectionary[FBChild().tableNumber] as! String
+                table.available = tableAsDectionary[FBChild().available] as! Bool
                 print("four")
-                
-    
-                self.tables.append(tableAsDectionary as! String)
+                self.tables.append(table)
             }
             
             print("five")

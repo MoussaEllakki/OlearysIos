@@ -14,8 +14,8 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      // buildRestaurant.buildTables(tableQuantity: 20)
-     //  buildRestaurant.buildTables2(tableQuantity: 5)
+      buildRestaurant.buildTables(tableQuantity: 23)
+     
         
     }
     

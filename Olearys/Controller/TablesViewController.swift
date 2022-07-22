@@ -8,7 +8,7 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
     @IBOutlet weak var tablesCollectionView: UICollectionView!
     
     let getDataFromeFireBase = GetDataFromeFireBase()
-    var tablesForDelete :[String] = []
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         tablesCollectionView.delegate = self
     
          getDataFromeFireBase.getTables { [self] in
-             tablesForDelete = getDataFromeFireBase.tables
+            
              tablesCollectionView.reloadData()
         }
   
@@ -25,7 +25,7 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
     
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-     return tablesForDelete.count
+        return getDataFromeFireBase.tables.count
     }
     
     
@@ -33,16 +33,18 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "tablesCell", for: indexPath) as! TablesCollectionViewCell
         
-        if (indexPath.row % 2  == 0){
+    
+            let tableImage : UIImage
+        if (getDataFromeFireBase.tables[indexPath.row].available == true){
             
-            let imgForDelete = UIImage(named: "imagered")
-            cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
+            tableImage  = UIImage(named: "imagegreen")!
         }else{
+            tableImage  = UIImage(named: "imagered")!
             
-            let imgForDelete = UIImage(named: "imagegreen")
-            cell.setUpTalesContent(tableNumber: tablesForDelete[indexPath.row] , tableImage: imgForDelete!)
         }
-      
+            let tableNumber = getDataFromeFireBase.tables[indexPath.row].number
+            cell.setUpTalesContent(tableNumber: tableNumber , tableImage: tableImage)
+       
    
         return cell
      }

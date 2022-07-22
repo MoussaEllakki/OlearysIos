@@ -261,8 +261,15 @@ extension TakeOrderViewController {
         var dialogMessage = UIAlertController(title: "Bekräfta", message: "Är du säker du vill skicka order till Köket ?", preferredStyle: .actionSheet)
         let jaKnapp = UIAlertAction(title: "Ja", style: .destructive, handler: { [self] (action) -> Void in
             
+            
+            for vc in self.navigationController!.viewControllers {
+                if let myViewCont = vc as? MainViewController
+                {
+                    self.navigationController?.popToViewController(myViewCont, animated: true)
+                }
+            }
            
-            self.navigationController?.popViewController(animated: true)
+           
             
         })
         

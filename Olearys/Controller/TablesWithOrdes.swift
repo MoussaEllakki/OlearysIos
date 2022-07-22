@@ -16,7 +16,7 @@ class TablesWithOrdes: UIViewController , UICollectionViewDataSource , UICollect
         attGoraCollectionView.delegate = self
     
          getDataFromeFireBase.getTables { [self] in
-             tablesForDelete = getDataFromeFireBase.tables
+            
              attGoraCollectionView.reloadData()
         }
   

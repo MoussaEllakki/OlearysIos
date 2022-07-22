@@ -6,12 +6,12 @@ class Table {
   
     
     var guests : [Guest] = []
-    var types : [Type] = []
     var number = ""
     var sum = 0.0
-    var status = Status.available
-    var payment = Payment.noOrder
-    var orderTaken = ""
+    var available = true
+    var paid = false
+    var hasOrder = false
+    
   
     
     

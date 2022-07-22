@@ -11,50 +11,39 @@ class BuildRestaurant {
     }
     
     
-
+    // this function must run once. then it must to remove from code
     func buildTables (tableQuantity : Int) {
       
-        let restaurant =   ref.child(Oneinstance().olearysEntre)
+        let restaurant =   ref.child(FBChild().olearysEntre)
         
-        for i in 1...tableQuantity{
+        
+        for tableNumber in 1...tableQuantity{
             
-            for i in 0..<tableQuantity{
-               let  tableNumberPlusOne = String(i + 1)
-               let tableNumber = String(i)
-             restaurant.child(Oneinstance().tables).child(tableNumber).setValue(tableNumberPlusOne)
+         let tableNumberAsString = String(tableNumber)
+            
+        let table =  restaurant.child(FBChild().tables).child(tableNumberAsString)
+            
+            let tableAsDectionary : [String : Any] =
+            
+            [
+                FBChild().tableNumber : tableNumberAsString,
+                FBChild().hasOrder : false,
+                FBChild().paid : false,
+                FBChild().available : true
                 
-            }
+            ]
+            
+            table.setValue(tableAsDectionary)
+            
         }
       
 }
     
-    func buildTables2 (tableQuantity : Int) {
-      
-        let restaurant =   ref.child(Oneinstance().olearysEntre)
-        
-        for i in 1...tableQuantity{
-            
-            for i in 0..<tableQuantity{
-               let  tableNumberPlusOne = String(i + 1)
-               let tableNumber = String(i)
-             restaurant.child(Oneinstance().specialTables).child(tableNumber).setValue(tableNumberPlusOne)
-                
-            }
-        }
-      
-}
-
+ 
     
 
     
-    
-        
-    func buildMenue(restaurantID : String){
-        
-        let restaurant =   ref.child("Restaurant").child(restaurantID).child("Menu").setValue("Falafel")
-    
-        
-  }
+  
     
     
 }

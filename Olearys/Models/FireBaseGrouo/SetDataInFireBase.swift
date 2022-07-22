@@ -20,11 +20,11 @@ class SetDataInFireBase {
   
     func sendOrderToFireBase(table : Table){
        
-        ref.child(Oneinstance().olearysEntre).child(Oneinstance()
+        ref.child(FBChild().olearysEntre).child(FBChild()
             .tables).child(table.number).setValue(table.number)
         
-        ref.child(Oneinstance().olearysEntre).child(Oneinstance()
-            .tables).child(table.number).child(Oneinstance().guests)
+        ref.child(FBChild().olearysEntre).child(FBChild()
+            .tables).child(table.number).child(FBChild().guests)
             .child(table.guests[0].number).child("orders").setValue(table.guests[1].types[0].name)
         
         

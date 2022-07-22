@@ -28,7 +28,7 @@ class BuildRestaurant {
             [
                 FBChild().tableNumber : tableNumberAsString,
                 FBChild().hasOrder : false,
-                FBChild().paid : false,
+                FBChild().paid : true,
                 FBChild().available : true
                 
             ]

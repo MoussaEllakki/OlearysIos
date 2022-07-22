@@ -14,7 +14,7 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      buildRestaurant.buildTables(tableQuantity: 23)
+    //  buildRestaurant.buildTables(tableQuantity: 20)
      
         
     }
@@ -46,7 +46,7 @@ extension LogInViewController {
         
         if (input == access.alexK || input == access.saraK || input == access.kithen){
             
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "TableWithOrder") as! TablesWithOrdes
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "TableWithOrder") as! TableWithOrderViewController
           
             self.navigationController?.pushViewController(vc, animated: true)
             

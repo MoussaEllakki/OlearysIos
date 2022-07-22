@@ -157,7 +157,7 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
         if (table.sum == 0.0){
             messageForuser.sendMessage(controller:self, msg: messageForuser.tableHaseNoOrder)
         }else{
-           confirmeMessage()
+           confirmeSendingOrder()
             
         }
         
@@ -256,12 +256,16 @@ extension TakeOrderViewController {
     
     
     
-    func confirmeMessage (){
+    func confirmeSendingOrder (){
         
         var dialogMessage = UIAlertController(title: "Bekräfta", message: "Är du säker du vill skicka order till Köket ?", preferredStyle: .actionSheet)
         let jaKnapp = UIAlertAction(title: "Ja", style: .destructive, handler: { [self] (action) -> Void in
             
-            
+            if (guest.sum == 0.0){
+                let guestNumber = table.guests.count - 1
+                table.guests.remove(at: guestNumber)
+            }
+            setDataInFireBase.sendOrderToFireBase(table: table)
             for vc in self.navigationController!.viewControllers {
                 if let myViewCont = vc as? MainViewController
                 {

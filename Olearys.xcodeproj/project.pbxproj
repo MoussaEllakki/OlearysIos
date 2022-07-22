@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50AE73A288B2C8B0060F72E /* ForTakingPaymentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50AE739288B2C8B0060F72E /* ForTakingPaymentCollectionViewCell.swift */; };
 		B512B7CD2863B472005891B1 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = B512B7CC2863B472005891B1 /* Type.swift */; };
 		B52461FE286959C900422C1B /* SetDataInFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52461FD286959C900422C1B /* SetDataInFireBase.swift */; };
 		B5246200286959F800422C1B /* GetDataFromeFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52461FF286959F800422C1B /* GetDataFromeFireBase.swift */; };
 		B524620228695A5E00422C1B /* UpdateDataInFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524620128695A5D00422C1B /* UpdateDataInFireBase.swift */; };
 		B533592D2869772700391544 /* FBChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533592C2869772700391544 /* FBChild.swift */; };
 		B533592F28697DE100391544 /* AttGoraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533592E28697DE100391544 /* AttGoraCollectionViewCell.swift */; };
+		B53787F2288B3B010046C564 /* TableWithOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53787F1288B3B010046C564 /* TableWithOrderViewController.swift */; };
 		B53D0741286577BE00A14040 /* TablesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */; };
 		B54BB920286F3AC6006F0860 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB91F286F3AC6006F0860 /* Food.swift */; };
 		B54BB922286F3B15006F0860 /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54BB921286F3B15006F0860 /* Dessert.swift */; };
@@ -20,6 +22,7 @@
 		B55B8DF8288AB947005BACC6 /* Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B8DF7288AB947005BACC6 /* Access.swift */; };
 		B57C9885286A204A00993F24 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C9884286A204A00993F24 /* FoodTableViewCell.swift */; };
 		B58F694B284E4A4B005BB074 /* MessageForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F694A284E4A4B005BB074 /* MessageForUser.swift */; };
+		B5A9EB15288AE20B002947D5 /* ObserveDataInFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A9EB14288AE20B002947D5 /* ObserveDataInFireBase.swift */; };
 		B5B8E146282DA90F00D18C10 /* BuildRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8E145282DA90F00D18C10 /* BuildRestaurant.swift */; };
 		B5B8E148282DA98100D18C10 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8E147282DA98100D18C10 /* Table.swift */; };
 		B5B8E14C282DA9FD00D18C10 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8E14B282DA9FD00D18C10 /* Order.swift */; };
@@ -33,7 +36,6 @@
 		B5BAA45C282D5ABD00541501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BAA45A282D5ABD00541501 /* Main.storyboard */; };
 		B5BAA45E282D5ABF00541501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BAA45D282D5ABF00541501 /* Assets.xcassets */; };
 		B5BAA461282D5ABF00541501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BAA45F282D5ABF00541501 /* LaunchScreen.storyboard */; };
-		B5D29BB4285334DF00357F94 /* TablesWithOrdes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB3285334DF00357F94 /* TablesWithOrdes.swift */; };
 		B5D29BB6285337C100357F94 /* ForTakingPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */; };
 		B5D29BB82853395900357F94 /* TakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB72853395900357F94 /* TakeOrderViewController.swift */; };
 		B5D29BBA2853399700357F94 /* KitchenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29BB92853399700357F94 /* KitchenViewController.swift */; };
@@ -53,12 +55,14 @@
 
 /* Begin PBXFileReference section */
 		047EF136C629E31A195F2858 /* Pods-Olearys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olearys.debug.xcconfig"; path = "Target Support Files/Pods-Olearys/Pods-Olearys.debug.xcconfig"; sourceTree = "<group>"; };
+		B50AE739288B2C8B0060F72E /* ForTakingPaymentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForTakingPaymentCollectionViewCell.swift; sourceTree = "<group>"; };
 		B512B7CC2863B472005891B1 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		B52461FD286959C900422C1B /* SetDataInFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDataInFireBase.swift; sourceTree = "<group>"; };
 		B52461FF286959F800422C1B /* GetDataFromeFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataFromeFireBase.swift; sourceTree = "<group>"; };
 		B524620128695A5D00422C1B /* UpdateDataInFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDataInFireBase.swift; sourceTree = "<group>"; };
 		B533592C2869772700391544 /* FBChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBChild.swift; sourceTree = "<group>"; };
 		B533592E28697DE100391544 /* AttGoraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttGoraCollectionViewCell.swift; sourceTree = "<group>"; };
+		B53787F1288B3B010046C564 /* TableWithOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableWithOrderViewController.swift; sourceTree = "<group>"; };
 		B53D0740286577BE00A14040 /* TablesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesCollectionViewCell.swift; sourceTree = "<group>"; };
 		B54BB91F286F3AC6006F0860 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		B54BB921286F3B15006F0860 /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		B55B8DF7288AB947005BACC6 /* Access.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Access.swift; sourceTree = "<group>"; };
 		B57C9884286A204A00993F24 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		B58F694A284E4A4B005BB074 /* MessageForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageForUser.swift; sourceTree = "<group>"; };
+		B5A9EB14288AE20B002947D5 /* ObserveDataInFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveDataInFireBase.swift; sourceTree = "<group>"; };
 		B5B8E145282DA90F00D18C10 /* BuildRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildRestaurant.swift; sourceTree = "<group>"; };
 		B5B8E147282DA98100D18C10 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		B5B8E14B282DA9FD00D18C10 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -81,7 +86,6 @@
 		B5BAA45D282D5ABF00541501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5BAA460282D5ABF00541501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5BAA462282D5ABF00541501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5D29BB3285334DF00357F94 /* TablesWithOrdes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesWithOrdes.swift; sourceTree = "<group>"; };
 		B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForTakingPaymentViewController.swift; sourceTree = "<group>"; };
 		B5D29BB72853395900357F94 /* TakeOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOrderViewController.swift; sourceTree = "<group>"; };
 		B5D29BB92853399700357F94 /* KitchenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenViewController.swift; sourceTree = "<group>"; };
@@ -120,21 +124,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B53359292869746C00391544 /* FireBaseGrouo */ = {
+		B53359292869746C00391544 /* FireBaseGrouop */ = {
 			isa = PBXGroup;
 			children = (
 				B52461FD286959C900422C1B /* SetDataInFireBase.swift */,
 				B52461FF286959F800422C1B /* GetDataFromeFireBase.swift */,
 				B524620128695A5D00422C1B /* UpdateDataInFireBase.swift */,
 				B5B8E145282DA90F00D18C10 /* BuildRestaurant.swift */,
+				B5A9EB14288AE20B002947D5 /* ObserveDataInFireBase.swift */,
 			);
-			path = FireBaseGrouo;
+			path = FireBaseGrouop;
 			sourceTree = "<group>";
 		};
 		B5B8E144282DA8F100D18C10 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B53359292869746C00391544 /* FireBaseGrouo */,
 				B58F694A284E4A4B005BB074 /* MessageForUser.swift */,
 				B533592C2869772700391544 /* FBChild.swift */,
 				B5E93DD42875ABA900B9E535 /* ShowMenu.swift */,
@@ -166,6 +170,7 @@
 				B5D29BBD28533A9A00357F94 /* RestaurantsContent */,
 				B5D29BB02853303800357F94 /* Cells */,
 				B5D29B8F28528B0800357F94 /* Controller */,
+				B53359292869746C00391544 /* FireBaseGrouop */,
 				B5B8E144282DA8F100D18C10 /* Models */,
 				B5BAA454282D5ABD00541501 /* AppDelegate.swift */,
 				B5BAA456282D5ABD00541501 /* SceneDelegate.swift */,
@@ -184,11 +189,11 @@
 				B5BAA458282D5ABD00541501 /* LogInViewController.swift */,
 				B5B8E25B2831AB4F00D18C10 /* MainViewController.swift */,
 				B5B8E25D2831AF4A00D18C10 /* TablesViewController.swift */,
-				B5D29BB3285334DF00357F94 /* TablesWithOrdes.swift */,
 				B5D29BB72853395900357F94 /* TakeOrderViewController.swift */,
 				B5D29BB92853399700357F94 /* KitchenViewController.swift */,
 				B5D29BB5285337C100357F94 /* ForTakingPaymentViewController.swift */,
 				B5D29BBB285339C100357F94 /* PaymentViewController.swift */,
+				B53787F1288B3B010046C564 /* TableWithOrderViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				B5F2023D28757FC80076781B /* GuestOrdersCollectionViewCell.swift */,
 				B5E93DCE2875972500B9E535 /* FoodCollectionViewCell.swift */,
 				B5E93DD228759A7200B9E535 /* MenuTableViewCell.swift */,
+				B50AE739288B2C8B0060F72E /* ForTakingPaymentCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -360,11 +366,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50AE73A288B2C8B0060F72E /* ForTakingPaymentCollectionViewCell.swift in Sources */,
 				B5E93DD52875ABA900B9E535 /* ShowMenu.swift in Sources */,
 				B5246200286959F800422C1B /* GetDataFromeFireBase.swift in Sources */,
 				B53D0741286577BE00A14040 /* TablesCollectionViewCell.swift in Sources */,
 				B5F202162875476B0076781B /* FoodMenus.swift in Sources */,
 				B5D29BBA2853399700357F94 /* KitchenViewController.swift in Sources */,
+				B53787F2288B3B010046C564 /* TableWithOrderViewController.swift in Sources */,
 				B5BAA459282D5ABD00541501 /* LogInViewController.swift in Sources */,
 				B5F20204287473310076781B /* Drinksmenus.swift in Sources */,
 				B5B8E150282DAA7A00D18C10 /* Guest.swift in Sources */,
@@ -384,10 +392,10 @@
 				B5BAA455282D5ABD00541501 /* AppDelegate.swift in Sources */,
 				B57C9885286A204A00993F24 /* FoodTableViewCell.swift in Sources */,
 				B5BAA457282D5ABD00541501 /* SceneDelegate.swift in Sources */,
-				B5D29BB4285334DF00357F94 /* TablesWithOrdes.swift in Sources */,
 				B5D29BB82853395900357F94 /* TakeOrderViewController.swift in Sources */,
 				B5F2023E28757FC80076781B /* GuestOrdersCollectionViewCell.swift in Sources */,
 				B5D29BBC285339C100357F94 /* PaymentViewController.swift in Sources */,
+				B5A9EB15288AE20B002947D5 /* ObserveDataInFireBase.swift in Sources */,
 				B52461FE286959C900422C1B /* SetDataInFireBase.swift in Sources */,
 				B5B8E146282DA90F00D18C10 /* BuildRestaurant.swift in Sources */,
 				B58F694B284E4A4B005BB074 /* MessageForUser.swift in Sources */,

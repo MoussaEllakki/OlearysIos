@@ -6,7 +6,9 @@ import Firebase
 class GetDataFromeFireBase {
     
     var ref :  DatabaseReference!
-    var tables : [Table] = []
+    
+    // perhaps it shoud delete
+   // var tables : [Table] = []
     
     init(){
         ref = Database.database().reference()
@@ -15,7 +17,9 @@ class GetDataFromeFireBase {
     
     
     
-
+    
+    // perhaps it shoud delete
+    /*
     func getTables ( completionHand: @escaping () -> ()){
         print("two")
         self.tables.removeAll()
@@ -30,6 +34,8 @@ class GetDataFromeFireBase {
             for   dataAsoneSnapShot in snapshot.children {
                 
                 let  oneSnapshot =  dataAsoneSnapShot as! DataSnapshot
+                
+               
                 let  tableAsDectionary = oneSnapshot.value as! [String : AnyObject]
                 
                 let table = Table()
@@ -47,7 +53,7 @@ class GetDataFromeFireBase {
         print("three")
         
     }
-    
+    */
     
     
     

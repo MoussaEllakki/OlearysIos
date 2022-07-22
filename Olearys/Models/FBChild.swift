@@ -9,6 +9,14 @@ class FBChild {
     let available = "Availale"
     let hasOrder = "HasOrder"
     let paid = "Paid"
+    let tableSum = "TableSum"
+    let tableInfo = "TableInfo"
     
+   
+    let guestSum = "Guestsum"
+    let guestsOrder = "GuestOrder"
+   
+    let typeName = "TypeName"
+    let typePrice = "Typeprice"
     
 }

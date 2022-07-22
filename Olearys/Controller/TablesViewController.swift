@@ -7,8 +7,8 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
 
     @IBOutlet weak var tablesCollectionView: UICollectionView!
     
-    let getDataFromeFireBase = GetDataFromeFireBase()
   
+    let observeDataInfireBase = ObserveDataInfireBase()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,7 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         tablesCollectionView.dataSource = self
         tablesCollectionView.delegate = self
     
-         getDataFromeFireBase.getTables { [self] in
+         observeDataInfireBase.getTables { [self] in
             
              tablesCollectionView.reloadData()
         }
@@ -25,7 +25,7 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
     
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return getDataFromeFireBase.tables.count
+        return observeDataInfireBase.tables.count
     }
     
     
@@ -35,14 +35,14 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         
     
             let tableImage : UIImage
-        if (getDataFromeFireBase.tables[indexPath.row].available == true){
+        if (observeDataInfireBase.tables[indexPath.row].available == true){
             
-            tableImage  = UIImage(named: "imagegreen")!
+            tableImage  = UIImage(named: "imggreen")!
         }else{
-            tableImage  = UIImage(named: "imagered")!
+            tableImage  = UIImage(named: "imgred")!
             
         }
-            let tableNumber = getDataFromeFireBase.tables[indexPath.row].number
+            let tableNumber = observeDataInfireBase.tables[indexPath.row].number
             cell.setUpTalesContent(tableNumber: tableNumber , tableImage: tableImage)
        
    
@@ -54,7 +54,9 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        
-        let segueToTakeOrderView = performSegue(withIdentifier: "toTakeOrderView", sender: indexPath.row)
+        
+        let tableNumber = observeDataInfireBase.tables[indexPath.row].number
+        let segueToTakeOrderView = performSegue(withIdentifier: "toTakeOrderView", sender: tableNumber)
         
     }
     
@@ -63,7 +65,7 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         
         var takeOrderView = segue.destination as! TakeOrderViewController
    
-        takeOrderView.table.number =  String (sender as! Int + 1)
+        takeOrderView.table.number =  String (sender as! String)
         
     }
     

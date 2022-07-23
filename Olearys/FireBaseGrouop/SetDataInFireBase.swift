@@ -31,7 +31,8 @@ class SetDataInFireBase {
                 FBChild().paid : false,
                 FBChild().available : false,
                 FBChild().tableSum : table.sum,
-                FBChild().tableNumber : table.number
+                FBChild().tableNumber : table.number,
+                FBChild().done : false
             ]
             
         
@@ -44,7 +45,7 @@ class SetDataInFireBase {
             
             
             guestsInFB.child(guest.number).child(FBChild().guestSum).setValue(guest.sum)
-            
+            guestsInFB.child(guest.number).child(FBChild().guestWishses).setValue(guest.guestWishes)
             
             for (index, type) in guest.types.enumerated(){
                 

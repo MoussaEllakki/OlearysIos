@@ -9,6 +9,7 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
     
   
     let observeDataInfireBase = ObserveDataInfireBase()
+    let messageForUser = MessageForUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +35,26 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "tablesCell", for: indexPath) as! TablesCollectionViewCell
         
     
-            let tableImage : UIImage
+        var color : UIColor =  .green
+        var tableStatus = ""
         if (observeDataInfireBase.tables[indexPath.row].available == true){
             
-            tableImage  = UIImage(named: "imggreen")!
-        }else{
-            tableImage  = UIImage(named: "imgred")!
+            color = .green
+            tableStatus = "  LEDIG"
             
+        }else if (observeDataInfireBase.tables[indexPath.row].available == false && observeDataInfireBase.tables[indexPath.row].done == false){
+           
+            color = .red
+            tableStatus = "  EJ Klar"
+         }
+        
+        else if (observeDataInfireBase.tables[indexPath.row].available == false && observeDataInfireBase.tables[indexPath.row].done == true){
+           
+            color = .red
+            tableStatus = "  KLAR"
         }
-            let tableNumber = observeDataInfireBase.tables[indexPath.row].number
-            cell.setUpTalesContent(tableNumber: tableNumber , tableImage: tableImage)
+            let tableNumber = observeDataInfireBase.tables[indexPath.row].number + tableStatus
+            cell.setUpTalesContent(tableNumber: tableNumber , color: color)
        
    
         return cell
@@ -54,13 +65,31 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        
+        if (observeDataInfireBase.tables[indexPath.row].available == true){
+            
+            let tableNumber = observeDataInfireBase.tables[indexPath.row].number
+            let segueToTakeOrderView = performSegue(withIdentifier: "toTakeOrderView", sender: tableNumber)
+        }else{
+            
+            messageForUser.sendMessage(controller: self, msg: messageForUser.takenTable)
+            
+        }
+     
         
-        let tableNumber = observeDataInfireBase.tables[indexPath.row].number
-        let segueToTakeOrderView = performSegue(withIdentifier: "toTakeOrderView", sender: tableNumber)
         
     }
     
   
+    // bestämmer margin avstånd från olika håll
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 30, left: 10, bottom: 30, right: 10)
+    }
+    
+    // bestämmer avstånd mellan varje cell vertical
+      func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+          return 30.0
+      }
+   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         var takeOrderView = segue.destination as! TakeOrderViewController
@@ -70,7 +99,7 @@ class TablesViewController: UIViewController  , UICollectionViewDelegate , UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width:self.view.frame.width * 0.2 , height: self.view.frame.height * 0.1)
+        return CGSize(width:self.view.frame.width * 0.27 , height: self.view.frame.height * 0.07)
     }
     
     

@@ -240,13 +240,14 @@ extension TakeOrderViewController {
         addittionOrderTextField!.delegate = self
        self.navigationItem.hidesBackButton = true
         addittionOrderTextField?.placeholder = "Gäst \(guest.number) önskemål"
+       addittionOrderTextField?.text = guest.guestWishes
         self.view.addSubview(addittionOrderTextField!)
         
           
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        guest.specialOrder = addittionOrderTextField!.text!
+        guest.guestWishes = addittionOrderTextField!.text!
         addittionOrderTextField!.isHidden = true
         self.navigationItem.hidesBackButton = false
         view.endEditing(true)

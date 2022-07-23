@@ -42,7 +42,7 @@ class ForTakingPaymentViewController: UIViewController , UICollectionViewDelegat
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width:self.view.frame.width * 0.2 , height: self.view.frame.height * 0.1)
+        return CGSize(width:self.view.frame.width * 0.25, height: self.view.frame.height * 0.1)
     }
 
 }

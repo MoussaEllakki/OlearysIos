@@ -11,10 +11,11 @@ class FBChild {
     let paid = "Paid"
     let tableSum = "TableSum"
     let tableInfo = "TableInfo"
-    
+    let done = "Done"
    
     let guestSum = "Guestsum"
     let guestsOrder = "GuestOrder"
+    let guestWishses = "GuestWishes"
    
     let typeName = "TypeName"
     let typePrice = "Typeprice"

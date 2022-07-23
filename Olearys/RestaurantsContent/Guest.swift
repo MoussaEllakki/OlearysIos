@@ -6,7 +6,7 @@ class Guest {
     var types = [Type]()
     var number = ""
     var sum = 0.0
-    var specialOrder = ""
+    var guestWishes = ""
     
     init(number : String){
         self.number = number
@@ -25,9 +25,8 @@ class Guest {
     
    
     
-    func orderSpecialOrder (specialOrder : String){
-        
-        self.specialOrder = specialOrder
+    func orderSpecialOrder (guestwishes : String){
+        self.guestWishes = guestwishes
     }
     
     

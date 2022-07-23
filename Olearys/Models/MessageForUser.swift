@@ -10,6 +10,7 @@ class MessageForUser  {
     let noAccess = "Du har ej access"
     let guestDosentOrdered = "Nuvarande gäst har inte beställt något"
     let tableHaseNoOrder = "Det finns ingen order att skicka"
+    let takenTable = "Detta bordet är upptaget"
    
     
     func sendMessage (controller : UIViewController ,  msg : String){

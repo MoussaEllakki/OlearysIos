@@ -5,12 +5,16 @@ class TablesCollectionViewCell: UICollectionViewCell {
     
     
     @IBOutlet weak var tableNumber: UILabel!
-    @IBOutlet weak var tableImage: UIImageView!
+
+ 
     
-    func setUpTalesContent(tableNumber : String , tableImage : UIImage){
+    func setUpTalesContent(tableNumber : String , color :UIColor){
         
-        self.tableNumber.text = tableNumber
-        self.tableImage.image = tableImage
+        self.tableNumber.text = tableNumber 
+        self.tableNumber.backgroundColor = color
+        self.tableNumber.layer.masksToBounds = true
+        self.tableNumber.layer.cornerRadius = 15
+  
         
     }
     

@@ -11,7 +11,7 @@ class Table {
     var available = true
     var paid = false
     var hasOrder = false
-    
+    var done = false
   
     
     

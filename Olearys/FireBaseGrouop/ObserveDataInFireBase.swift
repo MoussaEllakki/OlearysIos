@@ -33,6 +33,7 @@ class ObserveDataInfireBase {
                 let table = Table()
                 table.number = tableAsDectionary[FBChild().tableNumber] as! String
                 table.available = tableAsDectionary[FBChild().available] as! Bool
+                table.done =  tableAsDectionary[FBChild().done] as! Bool
                 print("four")
                 self.tables.append(table)
             }

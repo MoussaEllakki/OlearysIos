@@ -1,7 +1,7 @@
 
 import UIKit
 
-class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource , UITableViewDelegate , UITableViewDataSource , UICollectionViewDelegateFlowLayout , UITextFieldDelegate{
+class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource , UITableViewDelegate , UITableViewDataSource , UICollectionViewDelegateFlowLayout , UITextViewDelegate{
     
 
  
@@ -21,7 +21,9 @@ class TakeOrderViewController: UIViewController , UICollectionViewDelegate, UICo
     let kidsMenus = KidsMenus()
     var whichMenu = ShowMenu.foodMenus
     var messageForuser = MessageForUser()
-    var addittionOrderTextField : UITextField?
+ 
+    var guestWishTextView : UITextView!
+    var addGuestWishButton : UIButton!
     var setDataInFireBase = SetDataInFireBase()
  
     let table = Table()
@@ -230,31 +232,45 @@ extension TakeOrderViewController {
     
     
     
-    //____code for addition orders ----------------------------------------------------
+    //____code for add guest wishes ----------------------------------------------------
     
 @IBAction func extraOrderButton(_ sender: Any) {
        
-        addittionOrderTextField = UITextField(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-        addittionOrderTextField!.backgroundColor = .white
-        addittionOrderTextField!.returnKeyType = .done
-        addittionOrderTextField!.delegate = self
-       self.navigationItem.hidesBackButton = true
-        addittionOrderTextField?.placeholder = "Gäst \(guest.number) önskemål"
-       addittionOrderTextField?.text = guest.guestWishes
-        self.view.addSubview(addittionOrderTextField!)
-        
+    
+    guestWishTextView = UITextView(frame: CGRect(x: 0, y: 90, width: self.view.frame.width, height: self.view.frame.height))
+      guestWishTextView.font = UIFont.systemFont(ofSize: 20)
+       self.view.addSubview(guestWishTextView)
+    
+    addGuestWishButton = UIButton(frame: CGRect(x: 0 , y: 0, width: self.view.frame.width / 3, height: self.view.frame.height / 15))
+      addGuestWishButton.layer.cornerRadius = 20
+      addGuestWishButton.center = view.center
+      addGuestWishButton.backgroundColor = .gray
+      addGuestWishButton.setTitle("Add", for: .normal)
+      addGuestWishButton.addTarget(self, action: #selector(addGuestWish), for: .touchUpInside)
+      self.view.addSubview(addGuestWishButton)
+     self.navigationItem.hidesBackButton = true
+    guestWishTextView.text = guest.guestWishes
+
+    
+    
+    
           
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        guest.guestWishes = addittionOrderTextField!.text!
-        addittionOrderTextField!.isHidden = true
-        self.navigationItem.hidesBackButton = false
-        view.endEditing(true)
-        return true
-    }
+   
     // ----------------------------------------------------------------------------
     
+    
+    @objc func addGuestWish(){
+      
+        guest.guestWishes = guestWishTextView.text
+        guestWishTextView.isHidden = true
+        addGuestWishButton.isHidden = true
+        self.navigationItem.hidesBackButton = false
+        
+        
+        
+    }
     
     
     func confirmeSendingOrder (){

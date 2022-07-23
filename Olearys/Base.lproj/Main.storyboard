@@ -30,11 +30,12 @@
                                     <constraint firstAttribute="height" constant="60" id="LPK-h9-cbG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="63"/>
-                                <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.39818325421668044" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.57192306013296768" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="line" placeholder="ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="En9-Sw-Fu6">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Access ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="En9-Sw-Fu6">
                                 <rect key="frame" x="70" y="213" width="250" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ANW-eX-j3i"/>
                                 </constraints>
@@ -46,7 +47,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="JTV-mi-Wnn"/>
                                 </constraints>
-                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.39934261903068086" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.56555206096724964" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -95,7 +96,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="YAL-KZ-N60"/>
                     <connections>
-                        <outlet property="restaurantIDTextField" destination="En9-Sw-Fu6" id="yVI-t4-x3d"/>
+                        <outlet property="accessTextField" destination="En9-Sw-Fu6" id="yVI-t4-x3d"/>
                         <segue destination="taL-WR-Brk" kind="show" id="5a1-Jd-nHI"/>
                         <segue destination="vQz-x2-sgf" kind="show" id="2kP-Ob-8ZD"/>
                     </connections>
@@ -1075,6 +1076,9 @@
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

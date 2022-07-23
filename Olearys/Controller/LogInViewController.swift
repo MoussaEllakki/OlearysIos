@@ -5,7 +5,7 @@ import Firebase
 
 class LogInViewController: UIViewController {
     
-    @IBOutlet weak var restaurantIDTextField: UITextField!
+    @IBOutlet weak var accessTextField: UITextField!
     
     let buildRestaurant = BuildRestaurant()
     let messageForUser = MessageForUser()
@@ -15,22 +15,22 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         
      // buildRestaurant.buildTables(tableQuantity: 30)
-     
+   
         
     }
     
     
     @IBAction func logIn_button(_ sender: Any) {
-        if (restaurantIDTextField.text!.isEmpty) {
+        if (accessTextField.text!.isEmpty) {
             messageForUser.sendMessage(controller: self, msg: messageForUser.emptyTextFieldText)
         }
         
-        controllAccess(input: restaurantIDTextField.text!)
+        controllAccess(input: accessTextField.text!)
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        restaurantIDTextField.text = ""
+        accessTextField.text = ""
     }
     
 }
@@ -63,7 +63,8 @@ extension LogInViewController {
     
     }
 
-
+    
+     
 
 
 

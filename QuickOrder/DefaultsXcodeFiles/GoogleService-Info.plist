@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>236125757486-hnuk33if39tjt4aabq7hj21pfv3k8bvg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.236125757486-hnuk33if39tjt4aabq7hj21pfv3k8bvg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBZMcILJPZjqh59L7EINbOVkrVrS10U8KM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>236125757486</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>moussa.Ellakki-hotmail.com.QuickOrder</string>
+	<key>PROJECT_ID</key>
+	<string>quick-order-app-618c2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>quick-order-app-618c2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:236125757486:ios:e268345b9e6db69e57bfbf</string>
+	<key>DATABASE_URL</key>
+	<string>https://quick-order-app-618c2-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>
